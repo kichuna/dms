@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Children's Data</h2>
+
+<!-- 🔍 Search + Controls Container -->
+<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 20px;">
+    <!-- Search Input -->
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="🔍 Search by name..." 
+        style="padding: 10px; width: 300px; border-radius: 5px; border: 1px solid #ccc;"
+    >
+
+    <!-- Controls: Column Selection + Print -->
+    <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+        <div>
+            <strong>Select Columns:</strong><br>
+            <label><input type="checkbox" class="col-toggle" data-col="1" checked> Name</label>
+            <label><input type="checkbox" class="col-toggle" data-col="2" checked> DOB</label>
+            <label><input type="checkbox" class="col-toggle" data-col="3" checked> Gender</label>
+            <label><input type="checkbox" class="col-toggle" data-col="4" checked> Guardian</label>
+            <label><input type="checkbox" class="col-toggle" data-col="5" checked> Home Area</label>
+            <label><input type="checkbox" class="col-toggle" data-col="6" checked> Status</label>
+            <label><input type="checkbox" class="col-toggle" data-col="7" checked> Photo</label>
+        </div>
+
+        <button onclick="printTable()" style="padding: 8px 15px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">
+            🖨️ Print
+        </button>
+    </div>
+</div>
+
+<!-- 📋 Table -->
+<table id="childrenTable" style="width: 100%; border-collapse: collapse;">
+    <thead>
+        <tr style="background-color: #f2f2f2;">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Gender</th>
+            <th>Guardian Name</th>
+            <th>Home Area</th>
+            <th>Status</th>
+            <th>Photo</th>
+            <th class="no-print">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for child in children %}
+        <tr>
+            <td>{{ child[0] }}</td>
+            <td class="child-name">{{ child[1] }}</td>
+            <td>{{ child[2] }}</td>
+            <td>{{ child[3] }}</td>
+            <td>{{ child[4] }}</td>
+            <td>{{ child[6] }}</td> <!-- Swap: Home Area should show Status data -->
+            <td>{{ child[9] }}</td> <!-- Swap: Status should show Home Area data -->
+            <td>
+                {% if child[10] %}
+                    <img src="{{ url_for('static', filename='uploads/' ~ child[10]) }}" alt="{{ child[1] }}'s photo" style="width: 50px; height: 50px; border-radius: 4px;">
+                {% else %}
+                    <p>No photo</p>
+                {% endif %}
+            </td>
+            <td class="no-print">
+                <a href="{{ url_for('child_detail', child_id=child[0]) }}">View</a> |
+                <a href="{{ url_for('edit_child', child_id=child[0]) }}">Edit</a>
+                <form action="{{ url_for('delete_child', child_id=child[0]) }}" method="POST" style="display:inline;">
+                    <button type="submit" onclick="return confirm('Are you sure you want to delete this record?')">Delete</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!-- JS -->
+<script>
+    // 🔍 Live Search
+    const searchInput = document.getElementById('searchInput');
+    const tableRows = document.querySelectorAll('#childrenTable tbody tr');
+
+    searchInput.addEventListener('input', function () {
+        const query = this.value.toLowerCase();
+        tableRows.forEach(row => {
+            const nameCell = row.querySelector('.child-name');
+            const name = nameCell ? nameCell.textContent.toLowerCase() : '';
+            row.style.display = name.includes(query) ? '' : 'none';
+        });
+    });
+
+   // 🖨️ Print Selected Columns
+function printTable() {
+    const checkboxes = document.querySelectorAll('.col-toggle');
+    const columnsToShow = Array.from(checkboxes).map(cb => ({
+        index: parseInt(cb.dataset.col),
+        visible: cb.checked
+    }));
+
+    const table = document.getElementById('childrenTable').cloneNode(true);
+
+    // Loop through each row and fix the images' src for printing
+    const rows = table.querySelectorAll('tr');
+    rows.forEach(row => {
+        const img = row.querySelector('img');
+        if (img) {
+            const src = img.src;
+            if (src && !src.startsWith('http')) {
+                // Ensure the image source is fully qualified by adding the domain
+                img.src = window.location.origin + src;
+            }
+        }
+    });
+
+    // Remove columns based on the checkbox selection
+    Array.from(table.rows).forEach(row => {
+        Array.from(row.cells).forEach((cell, index) => {
+            // Keep ID (0), hide Actions (8), and toggle others
+            if (index === 0) return; // Always show ID
+            if (index === 8) { // Adjusted to match the "Actions" column index
+                cell.remove(); // Remove Actions column
+                return;
+            }
+            const col = columnsToShow.find(c => c.index === index);
+            if (col && !col.visible) {
+                cell.remove();
+            }
+        });
+    });
+
+    const printWindow = window.open('', '', 'width=900,height=600');
+    printWindow.document.write('<html><head><title>Print</title>');
+    printWindow.document.write('<style>table { width: 100%; border-collapse: collapse; } th, td { border: 1px solid #ccc; padding: 8px; }</style>');
+    printWindow.document.write('</head><body>');
+    printWindow.document.write('<h3>Selected Children\'s Data</h3>');
+    printWindow.document.write(table.outerHTML);
+    printWindow.document.write('</body></html>');
+    printWindow.document.close();
+    
+    // Wait a moment to ensure the document is fully loaded, then trigger the print
+    printWindow.onload = function() {
+        printWindow.print();
+    };
+}
+
+  
+
+</script>
+
+<!-- Hide elements with class 'no-print' when printing -->
+<style>
+    @media print {
+        .no-print {
+            display: none !important;
+        }
+    }
+</style>
+
+{% endblock %}

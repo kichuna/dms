@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="form-container">
+    <h2>Import Children Data from CSV</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="csv_file">Select CSV File</label>
+            <input type="file" name="csv_file" accept=".csv" required>
+        </div>
+        <div class="form-actions">
+            <button type="submit">Import</button>
+        </div>
+    </form>
+    <div class="form-actions">
+        <a href="{{ url_for('data_display') }}" class="back-link">← Back to Data Display</a>
+    </div>
+</div>
+{% endblock %}

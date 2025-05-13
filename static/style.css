@@ -1,0 +1,303 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    padding: 1em;
+}
+
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+.container {
+    margin: 2em;
+    padding: 1em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.alert {
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.data-entry-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;  /* Reduced padding to avoid stretching */
+}
+
+.data-entry-form {
+    background-color: white;
+    padding: 1.5em; /* Reduced padding for optimal spacing */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;  /* Reduced width for better fit on screens */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.data-entry-form h2 {
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1.2em;  /* Reduced bottom margin to optimize spacing */
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75em;  /* Slightly increased padding for input fields */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 0.75em;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 1.5em;  /* Added top margin for spacing between form and button */
+}
+
+.submit-button:hover {
+    background-color: #434190;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f4f4f4;
+}
+
+.login-form {
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.login-form h2 {
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.75em;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.login-button:hover {
+    background-color: #434190;
+}
+
+table img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.detail-container {
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2em auto;
+    text-align: left;
+    page-break-after: always;
+}
+
+.detail-header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.detail-header h3 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.detail-header p {
+    margin: 0.5em 0 0 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.detail-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.detail-item {
+    flex: 1 1 45%;
+    box-sizing: border-box;
+}
+
+.detail-item label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.photo-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.back-button, .print-button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.75em 1.5em;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.back-button:hover, .print-button:hover {
+    background-color: #434190;
+}
+
+.print-button {
+    background-color: #28a745;
+}
+
+.print-button:hover {
+    background-color: #218838;
+}
+
+/* New CSS for responsiveness and form layout */
+.data-entry-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5em;
+    box-sizing: border-box;
+}
+
+.data-entry-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.data-entry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.submit-button {
+    align-self: flex-start;
+}

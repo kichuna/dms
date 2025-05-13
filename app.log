@@ -1,0 +1,2084 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:36] "[32mGET /data_entry HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:36] "GET /login?next=/data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:36] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:40] "POST /login?next=/data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:45] "[32mPOST /login?next=/data_entry HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:45] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:45] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:48] "GET /child_detail/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:54] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:54] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:54] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:55] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:55] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:56] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:27:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:04] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:04] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:11] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:11] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:11] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:12] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:13] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:13] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:14] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:21] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:21] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:21] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:24] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:26] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:28:26] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:22] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:22] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:22] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:22] "GET /static/uploads/download.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:25] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:26] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:26] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:26] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:36] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:36] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:41] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:41] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:42] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:42] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:42] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:43] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:43] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:44] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:46] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:46] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:46] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:30:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:31:59] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:32:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:32:48] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:32:48] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:32:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:08] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:08] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:16] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:29] "[32mPOST /data_entry HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:29] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:29] "GET /static/uploads/download.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:33] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:33] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:35] "GET /child_detail/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:37] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:37] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:38] "GET /child_detail/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:33:38] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:37:42] "GET /child_detail/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:37:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:37:42] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:21] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:21] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:22] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:34] "[32mPOST /data_entry HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:34] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:34] "GET /static/uploads/download.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:37] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:37] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:42] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:42] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:50] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:50] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:51] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:58] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:58] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:38:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:39:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:39:08] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:39:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:39:08] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:40:39] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:40:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:40:39] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:40:39] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:40:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:40:40] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:40:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:40:40] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:40:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:40:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:40:43] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:40:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:40:44] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:40:45] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:40:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:44:14] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:44:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:44:14] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:44:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:44:16] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:44:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:44:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:44:25] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:44:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:44:29] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:44:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:47:23] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:47:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:47:42] "[35m[1mPOST /data_entry HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:47:42] "GET /data_entry?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:47:42] "GET /data_entry?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:47:42] "GET /data_entry?__debugger__=yes&cmd=resource&f=console.png&s=rwHC5d5nat6dxc8w8rth HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:47:42] "GET /data_entry?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:49:07] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:49:07] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:49:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:49:13] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:49:13] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:49:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:49:17] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:49:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:49:30] "[32mPOST /data_entry HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:49:30] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:49:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:58:48] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:58:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:58:49] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:58:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:58:50] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:58:55] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:58:55] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:58:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:59:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:59:01] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:59:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:59:07] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:59:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:59:19] "[32mPOST /data_entry HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:59:19] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:59:19] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:59:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:59:56] "GET /child_detail/8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:59:56] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 12:59:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:00:04] "GET /child_detail/6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:00:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:26] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:27] "GET /static/uploads/download.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:29] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:30] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:36] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:36] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:40] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:42] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:44] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:44] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:45] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:47] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:47] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:53] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:02:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:05:55] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:05:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:00] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:00] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:00] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:06] "GET /data_display?search=ee HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:06] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:09] "GET /data_display?search=ddd HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:09] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:18] "GET /child_detail/8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:18] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:21] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:21] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:24] "GET /data_display?search=keizan HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:06:24] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:08:55] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:08:55] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:08:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:00] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:00] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:00] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:01] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:01] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:01] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:01] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:01] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:02] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:04] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:04] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:04] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:04] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:09] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:09] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:11] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:12] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:12] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:13] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:14] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:14] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:18] "GET /data_display?search=evaluation HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:23] "GET /data_display?search=juma HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:23] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:30] "GET /data_display?search=mwakulola HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:30] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:36] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:38] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:38] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:38] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:39] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:39] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:40] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:48] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:48] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:51] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:51] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:52] "GET /child_detail/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:54] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:54] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:55] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:09:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:01] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:01] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:05] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:06] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:06] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:07] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:07] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:08] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:09] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:09] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:13] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:13] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:10:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:13:47] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:13:47] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:13:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:13:52] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:13:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:13:52] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:13:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:13:53] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:13:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:13:56] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:13:56] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:13:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:13:59] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:13:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:14:00] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:14:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:14:00] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:14:00] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:14:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:14:01] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:14:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:14:01] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:14:02] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:14:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:14:02] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:14:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:14:02] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:14:03] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:14:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:16:54] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:16:54] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:16:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:16:57] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:16:57] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:16:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:00] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:01] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:01] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:01] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:02] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:02] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:03] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:07] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:07] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:07] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:09] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:09] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:10] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:10] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:10] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:10] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:13] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:13] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:16] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:27] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:27] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:30] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:33] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:33] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:35] "GET /child_detail/8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:35] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:37] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:37] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:39] "GET /child_detail/8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:39] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:55] "GET /data_display?search=kulola HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:56] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:59] "GET /child_detail/8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:17:59] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:18:02] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:18:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:18:02] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:18:03] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:18:03] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:18:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:18:04] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:18:04] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:18:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:18:18] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:18:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:18:19] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:18:19] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:18:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:19:59] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:19:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:00] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:00] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:00] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:01] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:07] "[32mPOST /login?next=/data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:07] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:07] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:10] "GET /child_detail/8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:10] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:17] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:22] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:22] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:25] "GET /data_display?search=ee HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:27] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:43] "[32mPOST /data_entry HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:43] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:43] "GET /static/uploads/download.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:47] "GET /data_display?search= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:47] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:47] "GET /data_display?search= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:47] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:48] "GET /data_display?search= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:48] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:52] "GET /data_display?search=e HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:53] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:54] "GET /child_detail/9 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:20:54] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:35] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:35] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:35] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:35] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:41] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:41] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:41] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:41] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:42] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:43] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:43] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:43] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:48] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:48] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:54] "GET /edit_child/9 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:28:54] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:29:08] "[32mPOST /delete_child/6 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:29:08] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:29:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:29:08] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:29:17] "GET /edit_child/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:29:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:17] "GET /edit_child/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:22] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:22] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:24] "GET /edit_child/7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:24] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:32] "[32mPOST /edit_child/7 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:32] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:32] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:38] "GET /edit_child/7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:44] "[32mPOST /edit_child/7 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:44] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:31:44] "GET /static/uploads/download.jpg HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:26] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:26] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:26] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:26] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:31] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:31] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:32] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:32] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:34] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:34] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:35] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:43] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:43] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:49] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:33:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:12] "[32mPOST /data_entry HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:12] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:12] "GET /static/uploads/download.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:17] "GET /edit_child/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:17] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:23] "[32mPOST /edit_child/10 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:23] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:23] "[33mGET /static/uploads/Dropped HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:23] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:28] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:28] "[33mGET /static/uploads/Dropped HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:28] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:29] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:29] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:29] "[33mGET /static/uploads/Dropped HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:29] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:29] "[33mGET /static/uploads/Dropped HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:29] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:29] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "[33mGET /static/uploads/Dropped HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "[33mGET /static/uploads/Dropped HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "[33mGET /static/uploads/Dropped HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "[33mGET /static/uploads/Dropped HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:30] "[33mGET /static/uploads/Dropped HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:32] "GET /edit_child/10 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:32] "[33mGET /static/uploads/Dropped HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:38] "[32mPOST /edit_child/10 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:38] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:38] "GET /static/uploads/download.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:42] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:42] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:43] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:43] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:44] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:44] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:45] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:34:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:36:09] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:36:09] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:36:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:36:09] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:36:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:36:11] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:36:11] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:36:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:39:55] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:39:55] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:39:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:40:00] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:40:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:40:01] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:40:01] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:40:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:40:02] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [03/May/2025 13:40:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:11:51] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:11:51] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:11:52] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:11:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:11:59] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:11:59] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:11:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:11:59] "GET /static/uploads/download.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:12:07] "GET /edit_child/8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:12:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:12:07] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:16:55] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:16:56] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:16:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:16:58] "GET /child_detail/8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:16:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:16:58] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:17:38] "GET /child_detail/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:17:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:17:38] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:17:48] "GET /child_detail/5 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:17:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:17:48] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:03] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:03] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:06] "GET /data_display?search= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:06] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:08] "GET /data_display?search=jj HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:14] "GET /data_display?search=ju HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:14] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:21] "GET /data_display?search=ju HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:21] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:30] "GET /data_display?search=mwaku HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:30] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:45] "GET /data_display?search=mwaku HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:45] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:52] "GET /data_display?search=married HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:57] "GET /data_display?search=mar HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:20:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:21:00] "GET /data_display?search= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:21:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:21:00] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:25:05] "GET /data_display?search= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:25:05] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:25:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:26:07] "GET /child_detail/7 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:26:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:26:07] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:28:39] "GET /data_display?search= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:28:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:28:39] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:28:40] "GET /data_display?search= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:28:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:28:40] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:28:40] "GET /data_display?search= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:28:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:28:40] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:28:40] "GET /data_display?search= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:28:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:28:40] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:33:11] "GET /data_display?search= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:33:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:33:11] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:33:20] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:33:25] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:33:43] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:33:43] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:34:02] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:34:02] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:39:15] "GET /data_display?search= HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:39:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:39:15] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:39] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:39] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:40] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:40] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:43] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:43] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:44] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:45] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:45] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:45] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:46] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:46] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:46] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:53] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:53] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:41:53] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:09] "GET /child_detail/8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:09] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:12] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:12] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:13] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:16] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:16] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:17] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:19] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:19] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:52] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:56] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:42:56] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:48:50] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:48:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:48:50] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:48:51] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:48:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:52:48] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:52:48] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:55:42] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:55:42] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:57:56] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:57:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:58:59] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:58:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:59:36] "[32mPOST /data_entry HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:59:36] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:59:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:59:36] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:59:46] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 20:59:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:02:50] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:02:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:02:51] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:02:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:02:51] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:02:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:02:51] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:02:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:02:54] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:02:54] "GET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:02:54] "GET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:02:54] "GET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:02:55] "GET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:03] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:04] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:04] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:05] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:05] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:12] "[32mPOST /login?next=/data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:12] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:12] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:12] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:12] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:46] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:46] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:47] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:47] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:47] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:47] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:47] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:47] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:47] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:47] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:48] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:48] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:48] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:48] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:48] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:48] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:48] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:48] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:48] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:03:48] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:05:27] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:05:27] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:05:27] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:05:27] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:05:27] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:05:27] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:09:40] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:09:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:09:44] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:09:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:09:45] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:09:45] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:09:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:09:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:09:50] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:09:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:09:56] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:09:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:13] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:41] "[32mPOST /data_entry HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:41] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:41] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:41] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:41] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:41] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:55] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:55] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:55] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:55] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:55] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:56] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:57] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:13:58] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:45] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:45] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:45] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:45] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:45] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:50] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:50] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:50] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:50] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:50] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:50] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:55] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:55] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:55] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:55] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:55] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:14:55] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:15:01] "[32mPOST /data_entry HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:15:01] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:15:01] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:15:01] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:15:01] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=TG331Brm4LsPsHqLgQ2y HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:20:47] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:20:47] "[33mGET /static/uploads/2025-04-28 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:20:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:20:56] "[32mPOST /delete_child/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:20:56] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:20:56] "[33mGET /static/uploads/2025-04-28 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:20:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:20:58] "GET /edit_child/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:20:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:20:58] "[33mGET /static/uploads/2025-04-28 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:21:03] "[35m[1mPOST /edit_child/2 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:21:03] "GET /edit_child/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:21:03] "GET /edit_child/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:21:03] "GET /edit_child/2?__debugger__=yes&cmd=resource&f=console.png&s=eaQoHB4MzS7v3b9USfMY HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:21:03] "GET /edit_child/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:23:36] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:23:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:23:36] "[33mGET /static/uploads/2025-04-28 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:23:38] "GET /edit_child/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:23:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:23:44] "[32mPOST /edit_child/2 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:23:44] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:23:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:23:44] "[33mGET /static/uploads/2025-04-28 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:23:49] "GET /child_detail/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:23:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:23:49] "[33mGET /static/uploads/2025-04-28 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:23:54] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:23:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:23:54] "[33mGET /static/uploads/2025-04-28 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:24:02] "[33mGET /static/uploads/2025-04-28 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:24:14] "[32mPOST /delete_child/2 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:24:14] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:24:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:24:16] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:24:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:24:20] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:24:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:24:29] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:24:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:25:30] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:25:30] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:25:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:25:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:25:39] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:25:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:25:43] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:25:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:28:09] "[35m[1mGET /data_entry HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:28:09] "GET /data_entry?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:28:09] "GET /data_entry?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:28:09] "GET /data_entry?__debugger__=yes&cmd=resource&f=console.png&s=ctYsHOH4cYJzRhsN5r6G HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:28:09] "GET /data_entry?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:31:30] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:31:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:31:32] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:31:32] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:31:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:31:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:31:38] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:31:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:31:43] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:31:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:31:46] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:31:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:31:48] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:31:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:32:06] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:32:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:36:12] "[35m[1mGET /data_entry HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:36:12] "[36mGET /data_entry?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:36:12] "[36mGET /data_entry?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:36:12] "GET /data_entry?__debugger__=yes&cmd=resource&f=console.png&s=iox3M6VPnRdM2qU1PDfV HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:36:12] "[36mGET /data_entry?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:38:48] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:38:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:38:52] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:38:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:38:54] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:38:54] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:38:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:00] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:08] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:16] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:38] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:40] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:47] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:49] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:49] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:51] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:57] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:39:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:41:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:41:10] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:41:11] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:41:11] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:41:11] "GET /data_display?__debugger__=yes&cmd=resource&f=console.png&s=uSHYSk2hD4BUzsdP3Lek HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:41:11] "[36mGET /data_display?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:17] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:19] "GET /logout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:23] "GET /logout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:24] "GET /logout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:24] "GET /logout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:25] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:25] "GET /logout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:26] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:27] "GET /logout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:28] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:29] "GET /logout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:32] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:34] "GET /logout HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:42:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:43:06] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:43:06] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:43:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:43:07] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:43:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:43:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:43:12] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:43:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:43:17] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:43:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:43:22] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:43:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Children management\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:16] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:18] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:18] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:25] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:28] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:31] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:32] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:32] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:32] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:34] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:35] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:35] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:37] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:37] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:50:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:51:13] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:51:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:51:19] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:51:19] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:51:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:52:30] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:52:32] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:52:34] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:52:34] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:45] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:49] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:49] "GET /import_csv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:51] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:52] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:52] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:53] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:54] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:54] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:53:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:54:00] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:54:00] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:54:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:54:02] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:54:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:54:04] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:54:04] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:54:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:08] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:08] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:09] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:09] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:09] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:10] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:10] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:10] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:11] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:12] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:12] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:15] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:15] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:15] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:16] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:22] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:22] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:26] "GET /import_csv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:31] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:32] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:32] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:33] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:34] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:34] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:55:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:05] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:06] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:06] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:07] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:08] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:08] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:10] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:10] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:11] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:12] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:12] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:13] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:14] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:14] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:15] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:58:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:24] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:25] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:25] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:31] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:31] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:34] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:34] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:41] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:41] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:47] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:47] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:47] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:54] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 21:59:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:01:41] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:01:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:01:44] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:01:44] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:01:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:01:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:01:50] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:01:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:03:12] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:03:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:03:13] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:03:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:03:27] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:03:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:03:28] "GET /import_csv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:03:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:03:29] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:03:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:05:52] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:05:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:05:53] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:05:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:05:54] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:05:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:05:54] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:05:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:05:54] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:05:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:02] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:11] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:11] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:18] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:18] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:28] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:28] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:35] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:40] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:43] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:43] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:53] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:53] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:07:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:10:36] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:10:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:10:37] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:10:37] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:10:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:10:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:10:43] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:10:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:10:48] "GET /import_csv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:10:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:10:56] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:10:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:11:32] "GET /import_csv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:11:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:11:38] "[32mPOST /import_csv HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:11:38] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:11:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:12:55] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:12:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:12:56] "GET /import_csv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:12:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:13:00] "[32mPOST /import_csv HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:13:00] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:13:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:14:48] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:14:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:14:48] "GET /import_csv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:14:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:14:53] "[32mPOST /import_csv HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:14:53] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:14:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:15:01] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:15:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:15:04] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:15:05] "GET /edit_child/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:15:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:15:42] "[32mPOST /edit_child/3 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:15:42] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:15:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:15:42] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:15:48] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:15:48] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:15:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:15:53] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:16:35] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:16:35] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:16:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:16:51] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:16:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:16:51] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:16:52] "GET /import_csv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:16:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:16:53] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:16:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:16:54] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:16:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:16:54] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:20:46] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:20:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:20:46] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:20:46] "[33mGET /static/img/default.png HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:20:49] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:20:49] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:20:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:21:24] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:21:24] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:21:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:21] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:21] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:21] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:21] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:21] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:21] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:22] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:24] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:24] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:26] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:26] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:27] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:27] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:27] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:27] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:28] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:28] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:47] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:47] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:53] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:53] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:53] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:56] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:22:56] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:27:00] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:27:00] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:27:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:27:01] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:27:01] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:27:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:27:02] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:27:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:27:02] "[33mGET /static/uploads/Inactive HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:27:02] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:27:11] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:27:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:27:11] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:28:16] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:28:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:28:16] "GET /static/uploads/download.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:28:59] "GET /edit_child/21 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:28:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:29:22] "[32mPOST /edit_child/21 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:29:22] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:29:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:29:22] "GET /static/uploads/download.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:29:29] "GET /import_csv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:29:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:30:19] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:30:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:30:19] "GET /import_csv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:30:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:30:20] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:30:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:30:20] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:30:24] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:30:24] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:30:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:30:27] "[32mGET /data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:30:27] "GET /login?next=/data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:30:35] "[32mPOST /login?next=/data_display HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:30:35] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:30:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:30:35] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:36:15] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:36:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:36:15] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:38:11] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:38:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:38:11] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:39:05] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:39:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:39:05] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:39:58] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:39:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:39:58] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:41:12] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:41:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:41:12] "[33mGET /static/uploads/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:04] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:04] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:08] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:08] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:08] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:08] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:08] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:08] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:09] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:09] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:09] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:09] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:09] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:42:09] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:43:13] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:43:13] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:43:15] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:43:15] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:43:15] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:43:15] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:43:52] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:43:52] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:43:52] "[33mGET /static/uploads/Inactive HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:43:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:45:56] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:45:56] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:45:56] "[33mGET /static/uploads/Inactive HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:45:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:45:57] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:45:57] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:45:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:45:57] "[33mGET /static/uploads/Inactive HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:45:57] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:45:57] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:45:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:45:57] "[33mGET /static/uploads/Inactive HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:45:58] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:45:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:45:58] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:45:58] "[33mGET /static/uploads/Inactive HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:47:42] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:47:42] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:47:42] "[33mGET /static/uploads/Inactive HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:47:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:48:54] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:48:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:48:54] "[33mGET /static/uploads/Active HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:48:54] "[33mGET /static/uploads/Inactive HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:49:46] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:49:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:49:46] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:50:03] "[32mPOST /edit_child/2 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:50:03] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:50:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:50:03] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:50:17] "GET /child_detail/8 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:50:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:50:19] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:50:20] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:50:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:50:20] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:52:31] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:52:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:52:31] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:52:32] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:52:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:52:32] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:52:32] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:52:32] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:52:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:52:35] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:52:35] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:52:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:31] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:31] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:32] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:32] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:32] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:32] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:32] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:32] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:32] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:32] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:33] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:33] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:34] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:35] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:35] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:37] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:54:37] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:06] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:06] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:06] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:06] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:07] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:07] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:07] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:07] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:07] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:07] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:12] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:12] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:14] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:14] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:16] "GET /child_detail/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:19] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:19] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:56:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:15] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:16] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:16] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:16] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:17] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:17] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:17] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:17] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:17] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:17] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:17] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:17] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:17] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:17] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:18] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:18] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:19] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:21] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:21] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:23] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 22:58:23] "[33mGET /static/uploads/2025-05-12 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:02] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:02] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:03] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:03] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:04] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:04] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:09] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:16] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:16] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:35] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:35] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:40] "GET /child_detail/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:00:40] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:01:05] "GET /child_detail/22 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:01:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:01:20] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:01:20] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:01:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:01:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:01:26] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:01:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:01:26] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:04:20] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:04:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:04:20] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:04:21] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:04:21] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:04:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:05:56] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:05:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:05:56] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:06:07] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:08:04] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:08:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:08:04] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:08:11] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:35] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:35] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:37] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:37] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:43] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:54] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:09:54] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:10:51] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:10:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:10:51] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:10:58] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:11:21] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:11:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/May/2025 23:11:21] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 847-124-926
+INFO:werkzeug:127.0.0.1 - - [13/May/2025 09:59:06] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2025 09:59:06] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2025 09:59:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2025 09:59:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2025 09:59:11] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2025 09:59:12] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2025 09:59:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/May/2025 09:59:12] "[36mGET /static/uploads/download.jpg HTTP/1.1[0m" 304 -

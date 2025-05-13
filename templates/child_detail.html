@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    @media print {
+        .print-button, .back-button {
+            display: none;
+        }
+    }
+
+    .report-container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .report-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    .report-table th, .report-table td {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .photo-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .photo-container img {
+        max-width: 200px;
+        height: auto;
+        border: 1px solid #ddd;
+        padding: 5px;
+        border-radius: 8px;
+    }
+
+    .button-container {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .print-button, .back-button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+</style>
+
+<div class="report-container">
+    <h2>Child Details Report</h2>
+
+    <table class="report-table">
+        <tr>
+            <th>Full Name</th>
+            <td>{{ child[1] }}</td>
+        </tr>
+        <tr>
+            <th>Date of Birth</th>
+            <td>{{ child[2] }}</td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>{{ child[3] }}</td>
+        </tr>
+        <tr>
+            <th>Guardian Name</th>
+            <td>{{ child[4] }}</td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td>{{ child[5] }}</td>
+        </tr>
+    </table>
+
+    <div class="photo-container">
+        {% if child[10] %}
+            <img src="{{ url_for('static', filename='uploads/' ~ child[10]) }}" alt="{{ child[1] }}'s photo">
+        {% else %}
+            <p><em>No photo available</em></p>
+        {% endif %}
+    </div>
+
+    <div class="button-container">
+        <a href="{{ url_for('data_display') }}" class="back-button">Back to List</a>
+        <button class="print-button" onclick="window.print()">Print Report</button>
+    </div>
+</div>
+{% endblock %}
