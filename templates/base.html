@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Children Management System</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
+
 <body>
     <header>
         <nav>
             <div class="menu">
                 {% if current_user.is_authenticated %}
-                    {% if current_user.role == 'admin' %}
-                        <a href="{{ url_for('data_entry') }}" class="nav-link">Data Entry</a>
-                        <a href="{{ url_for('import_csv') }}" class="nav-link">Import CSV</a>
-                    {% endif %}
-                    <a href="{{ url_for('data_display') }}" class="nav-link">Data Display</a>
+                    <!-- Home -->
+                    <a href="{{ url_for('data_display') }}" class="nav-link">Home</a>
+
+                    <!-- Child Management Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropbtn">Child Management ▾</button>
+                        <div class="dropdown-content">
+                            <a href="{{ url_for('data_entry') }}">Child Registration</a>
+                            <a href="{{ url_for('import_csv') }}">Import CSV</a>
+                            <a href="{{ url_for('data_display') }}">Data Display</a>
+                        </div>
+                    </div>
+
+                    <!-- Project Management Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropbtn">Project Management ▾</button>
+                        <div class="dropdown-content">
+                            <a href="{{ url_for('data_manager') }}">Education - Data Manager</a>
+                            <a href="{{ url_for('add_family_program_data') }}">Family - Data Manager</a>
+                            <a href="{{ url_for('indicators') }}">View Indicators</a>
+                            <a href="{{ url_for('dashboard') }}">Dashboard</a>
+                        </div>
+                    </div>
+
+                
+
+                    <!-- Help & Logout -->
+                    <a href="{{ url_for('help') }}" class="nav-link">Help</a>
                     <a href="{{ url_for('logout') }}" class="nav-link">Logout</a>
                 {% else %}
                     <a href="{{ url_for('login') }}" class="nav-link">Login</a>
@@ -26,12 +51,13 @@
 
     <div class="container">
         {% with messages = get_flashed_messages(with_categories=true) %}
-          {% if messages %}
-            {% for category, message in messages %}
-              <div class="alert alert-{{ category }}">{{ message }}</div>
-            {% endfor %}
-          {% endif %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
         {% endwith %}
+
         {% block content %}{% endblock %}
     </div>
 
@@ -39,4 +65,5 @@
         <p>&copy; 2025 Children Management System</p>
     </footer>
 </body>
+
 </html>

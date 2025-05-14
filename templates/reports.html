@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reports</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap & Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Chart.js & Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .sidebar {
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #343a40;
+            padding-top: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #495057;
+        }
+
+        .main-content {
+            margin-left: 270px;
+            padding: 30px;
+        }
+
+        .export-buttons {
+            margin-top: 25px;
+        }
+
+        .chart-container {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+
+        h1 {
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h4 class="text-white text-center mb-4">Dashboard Menu</h4>
+        <a href="/"><i class="fa fa-home me-2"></i>Back Home</a>
+        <a href="/dashboard"><i class="fa fa-dashboard me-2"></i>Dashboard</a>
+        <a href="/reports"><i class="fa fa-bar-chart me-2"></i>Reports</a>
+        <a href="/help"><i class="fa fa-question-circle me-2"></i>Help</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1 class="mb-4">Generate Reports</h1>
+
+        <!-- Filter Form -->
+        <form method="POST" action="/reports" class="row g-3">
+            <div class="col-md-4">
+                <label class="form-label">Report Type</label>
+                <select class="form-select" name="report_type">
+                    <option value="education">Education Support</option>
+                    <option value="family">Family Support</option>
+                </select>
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label">Time Period</label>
+                <select class="form-select" name="period" id="periodSelect">
+                    <option value="this-month">This Month</option>
+                    <option value="last-3-months">Last 3 Months</option>
+                    <option value="this-year">This Year</option>
+                    <option value="custom">Custom</option>
+                </select>
+            </div>
+
+            <div class="col-md-4" id="custom-date-range" style="display: none;">
+                <label class="form-label">Custom Date Range</label>
+                <input type="date" name="start_date" class="form-control mb-2">
+                <input type="date" name="end_date" class="form-control">
+            </div>
+
+            <div class="col-12 mt-2">
+                <button type="submit" class="btn btn-primary"><i class="fa fa-line-chart me-1"></i>Generate Report</button>
+            </div>
+        </form>
+
+        <!-- Export Buttons -->
+        <div class="export-buttons">
+            <a href="/export/pdf" class="btn btn-outline-danger me-2"><i class="fa fa-file-pdf-o"></i> Export PDF</a>
+            <a href="/export/excel" class="btn btn-outline-success"><i class="fa fa-file-excel-o"></i> Export Excel</a>
+        </div>
+
+        <!-- Chart Container -->
+        <div class="chart-container mt-4">
+            <canvas id="reportChart" height="120"></canvas>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+        // Toggle custom date range visibility
+        document.getElementById('periodSelect').addEventListener('change', function () {
+            document.getElementById('custom-date-range').style.display = this.value === 'custom' ? 'block' : 'none';
+        });
+
+        // Render Chart
+        const ctx = document.getElementById('reportChart').getContext('2d');
+        const reportChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: {{ labels | safe }},
+                datasets: [{
+                    label: 'Report Data',
+                    data: {{ values | safe }},
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                plugins: {
+                    datalabels: {
+                        anchor: 'end',
+                        align: 'top',
+                        color: '#000',
+                        font: {
+                            weight: 'bold'
+                        }
+                    },
+                    legend: {
+                        display: false
+                    }
+                },
+                responsive: true,
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            },
+            plugins: [ChartDataLabels]
+        });
+    </script>
+
+</body>
+</html>

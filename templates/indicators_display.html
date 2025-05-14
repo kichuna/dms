@@ -1,0 +1,276 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Program Indicators</h2>
+
+<!-- Controls Container -->
+<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 20px;">
+    <!-- Program Type Selector -->
+    <div class="program-selector">
+        <button class="tab-btn active" onclick="switchProgram('education')"
+            style="padding: 8px 15px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; margin-right: 10px;">
+            Education Support
+        </button>
+        <button class="tab-btn" onclick="switchProgram('family')"
+            style="padding: 8px 15px; background-color: #f0f0f0; color: #333; border: none; border-radius: 5px;">
+            Family Support
+        </button>
+    </div>
+
+    <!-- Controls: Print -->
+    <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+        <button onclick="printTable()"
+            style="padding: 8px 15px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">
+            🖨️ Print
+        </button>
+    </div>
+</div>
+
+<!-- Education Support Table -->
+<div id="education-table" class="indicator-table">
+    <table id="educationTable" style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+        <thead>
+            <tr style="background-color: #f2f2f2;">
+                <th>Date</th>
+                <th>High School</th>
+                <th>College</th>
+                <th>Scholarship</th>
+                <th>Transport</th>
+                <th>Upkeep</th>
+                <th>Materials</th>
+                <th>Pocket Money</th>
+                <th>Tuition</th>
+                <th class="no-print">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if education_indicators %}
+                {% for indicator in education_indicators %}
+                <tr data-id="{{ indicator.id }}">
+                    <td>{{ indicator.date_column.strftime('%Y-%m-%d') }}</td>
+                    <td><span class="display-value">{{ indicator.enrolled_in_high_school }}</span>
+                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.enrolled_in_high_school }}">
+                    </td>
+                    <td><span class="display-value">{{ indicator.enrolled_in_college }}</span>
+                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.enrolled_in_college }}">
+                    </td>
+                    <td><span class="display-value">{{ indicator.continued_scholarship_support }}</span>
+                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.continued_scholarship_support }}">
+                    </td>
+                    <td><span class="display-value">{{ indicator.supported_with_transport }}</span>
+                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.supported_with_transport }}">
+                    </td>
+                    <td><span class="display-value">{{ indicator.supported_with_upkeep }}</span>
+                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.supported_with_upkeep }}">
+                    </td>
+                    <td><span class="display-value">{{ indicator.supported_with_scholastic_materials }}</span>
+                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.supported_with_scholastic_materials }}">
+                    </td>
+                    <td><span class="display-value">{{ indicator.supported_with_pocket_money }}</span>
+                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.supported_with_pocket_money }}">
+                    </td>
+                    <td><span class="display-value">{{ indicator.supported_with_tuition }}</span>
+                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.supported_with_tuition }}">
+                    </td>
+                    <td class="no-print">
+                        <button onclick="editRow(this)" class="btn btn-edit"
+                            style="padding: 6px 12px; margin: 0 4px; border-radius: 4px;">Edit</button>
+                        <button onclick="saveRow(this)" class="btn btn-save" style="display: none; padding: 6px 12px; margin: 0 4px; border-radius: 4px;">Save</button>
+                        <button onclick="deleteIndicator('education', {{ indicator.id }})" class="btn btn-delete"
+                            style="padding: 6px 12px; margin: 0 4px; border-radius: 4px;">Delete</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="10" style="text-align: center;">No records found.</td>
+                </tr>
+            {% endif %}
+        </tbody>
+    </table>
+</div>
+
+<!-- Family Support Table -->
+<div id="family-table" class="indicator-table" style="display: none;">
+    <table id="familyTable" style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+        <thead>
+            <tr style="background-color: #f2f2f2;">
+                <th>Date</th>
+                <th>Financial</th>
+                <th>Housing</th>
+                <th>Healthcare</th>
+                <th>Food</th>
+                <th>Education</th>
+                <th>Employment</th>
+                <th>Emotional</th>
+                <th>Legal</th>
+                <th class="no-print">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% if family_indicators %}
+                {% for indicator in family_indicators %}
+                <tr data-id="{{ indicator.id }}">
+                    <td>{{ indicator.date_column.strftime('%Y-%m-%d') }}</td>
+                    <td><span class="display-value">{{ indicator.financial_support }}</span>
+                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.financial_support }}">
+                    </td>
+                    <td><span class="display-value">{{ indicator.housing_support }}</span>
+                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.housing_support }}">
+                    </td>
+                    <td><span class="display-value">{{ indicator.healthcare_support }}</span>
+                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.healthcare_support }}">
+                    </td>
+                    <td><span class="display-value">{{ indicator.food_support }}</span>
+                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.food_support }}">
+                    </td>
+                    <td><span class="display-value">{{ indicator.educational_support }}</span>
+                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.educational_support }}">
+                    </td>
+                    <td><span class="display-value">{{ indicator.employment_support }}</span>
+                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.employment_support }}">
+                    </td>
+                    <td><span class="display-value">{{ indicator.emotional_support }}</span>
+                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.emotional_support }}">
+                    </td>
+                    <td><span class="display-value">{{ indicator.legal_support }}</span>
+                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.legal_support }}">
+                    </td>
+                    <td class="no-print">
+                        <button onclick="editRow(this)" class="btn btn-edit"
+                            style="padding: 6px 12px; margin: 0 4px; border-radius: 4px;">Edit</button>
+                        <button onclick="saveRow(this)" class="btn btn-save" style="display: none; padding: 6px 12px; margin: 0 4px; border-radius: 4px;">Save</button>
+                        <button onclick="deleteIndicator('family', {{ indicator.id }})" class="btn btn-delete"
+                            style="padding: 6px 12px; margin: 0 4px; border-radius: 4px;">Delete</button>
+                    </td>
+                </tr>
+                {% endfor %}
+            {% else %}
+                <tr>
+                    <td colspan="10" style="text-align: center;">No records found.</td>
+                </tr>
+            {% endif %}
+        </tbody>
+    </table>
+</div>
+
+<style>
+    .edit-input {
+        width: 60px;
+        padding: 4px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .btn-edit {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+    }
+    .btn-save {
+        background-color: #2196F3;
+        color: white;
+        border: none;
+    }
+    .btn-delete {
+        background-color: #f44336;
+        color: white;
+        border: none;
+    }
+</style>
+
+<script>
+    function switchProgram(program) {
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            const isActive = btn.textContent.trim().toLowerCase().includes(program);
+            btn.style.backgroundColor = isActive ? '#4CAF50' : '#f0f0f0';
+            btn.style.color = isActive ? 'white' : '#333';
+        });
+
+        document.getElementById('education-table').style.display = (program === 'education') ? 'block' : 'none';
+        document.getElementById('family-table').style.display = (program === 'family') ? 'block' : 'none';
+    }
+
+    function editRow(button) {
+        const row = button.closest('tr');
+        const displayValues = row.querySelectorAll('.display-value');
+        const editInputs = row.querySelectorAll('.edit-input');
+        const editButton = row.querySelector('.btn-edit');
+        const saveButton = row.querySelector('.btn-save');
+
+        displayValues.forEach(span => span.style.display = 'none');
+        editInputs.forEach(input => input.style.display = 'inline-block');
+        editButton.style.display = 'none';
+        saveButton.style.display = 'inline-block';
+    }
+
+    function saveRow(button) {
+        const row = button.closest('tr');
+        const id = row.dataset.id;
+        const inputs = row.querySelectorAll('.edit-input');
+        const values = Array.from(inputs).map(input => parseInt(input.value) || 0);
+        const program = row.closest('.indicator-table').id.split('-')[0]; // 'education' or 'family'
+
+        fetch('/update_indicator', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                id: id,
+                program: program,
+                values: values
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                const displayValues = row.querySelectorAll('.display-value');
+                const editInputs = row.querySelectorAll('.edit-input');
+                const editButton = row.querySelector('.btn-edit');
+                const saveButton = row.querySelector('.btn-save');
+
+                // Update display values
+                displayValues.forEach((span, index) => {
+                    span.textContent = values[index];
+                    span.style.display = 'inline';
+                });
+                editInputs.forEach(input => input.style.display = 'none');
+                editButton.style.display = 'inline-block';
+                saveButton.style.display = 'none';
+            } else {
+                alert('Error updating record: ' + data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Error updating record');
+        });
+    }
+
+    function deleteIndicator(program, id) {
+        if (confirm('Are you sure you want to delete this record?')) {
+            fetch(`/delete_indicator/${program}/${id}`, {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const row = document.querySelector(`tr[data-id="${id}"]`);
+                    row.remove();
+                } else {
+                    alert('Error deleting record: ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error deleting record');
+            });
+        }
+    }
+
+    function printTable() {
+        window.print();
+    }
+</script>
+
+{% endblock %}
