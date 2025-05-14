@@ -24,6 +24,9 @@ else:
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
+# Initialize SQLAlchemy after configuration
+db = SQLAlchemy(app)
+
 # Uploads directory
 UPLOAD_FOLDER = 'static/uploads'
 if not os.path.exists(UPLOAD_FOLDER):
