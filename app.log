@@ -4226,3 +4226,2124 @@ INFO:werkzeug:127.0.0.1 - - [14/May/2025 21:46:52] "[32mPOST /login HTTP/1.1[0
 INFO:werkzeug:127.0.0.1 - - [14/May/2025 21:46:52] "GET /data_display HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [14/May/2025 21:46:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [14/May/2025 21:46:57] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.101:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 22:52:16] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 22:52:16] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 22:52:16] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 22:52:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 22:52:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 22:52:24] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 22:52:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.101:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:47:13] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:47:13] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:47:13] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:47:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:47:17] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:47:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:47:29] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:47:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:47:51] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:47:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:47:56] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:47:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:49:27] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:49:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:49:56] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:49:56] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:49:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:50:03] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:50:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:50:13] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:50:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.101:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.101:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:55:22] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:55:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:55:27] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/May/2025 23:55:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.101:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 00:00:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 426, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 00:00:35] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.101:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 00:05:04] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 00:05:04] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 00:05:04] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 00:05:05] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 00:05:05] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.101:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 00:05:57] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 00:05:57] "[32mGET /login HTTP/1.1[0m" 302 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 00:05:57] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 00:05:57] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 00:05:58] "[32mGET /login HTTP/1.1[0m" 302 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 00:05:58] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.101:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 00:07:33] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 00:07:33] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.236.216:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:06:35] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:06:35] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:06:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:06:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:06:46] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:06:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:09:08] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:09:08] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:09:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:09:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:09:17] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:09:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:09:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.236.216:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:22:57] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:22:57] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:22:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:23:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:23:08] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:25:07] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:25:08] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:25:08] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:25:08] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:25:08] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:25:09] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:25:09] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:25:09] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 422, in data_display
+    return render_template('data_display.html', children=children, search_query=search_query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\data_display.html", line 52, in block 'content'
+    <td>{{ child.date_of_birth.strftime('%Y-%m-%d') }}</td>
+    ^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:25:09] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.236.216:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:27:49] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:27:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:27:55] "GET /add_family_program_data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:27:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:27:57] "GET /data_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:27:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:27:59] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:27:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:28:04] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:28:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:29:21] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:29:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:29:22] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:29:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:29:22] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:29:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:29:22] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:29:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.236.216:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:29:50] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:29:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.236.216:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    return render_template('indicators_display.html',
+                         education_indicators=education_indicators,
+                         family_indicators=family_indicators)
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column.strftime('%Y-%m-%d') }}</td>
+    ^^^^^
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:32:00] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 1463, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 872, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    return render_template('indicators_display.html',
+                         education_indicators=education_indicators,
+                         family_indicators=family_indicators)
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column.strftime('%Y-%m-%d') }}</td>
+    ^^^^^
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:32:05] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:32:22] "GET /data_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:32:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:32:24] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:33:10] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:33:51] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.236.216:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:37:22] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:37:22] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:37:22] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:37:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    return render_template('indicators_display.html',
+                         education_indicators=education_indicators,
+                         family_indicators=family_indicators)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column.strftime('%Y-%m-%d') }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:37:27] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:37:31] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:37:42] "POST /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:40:24] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:40:24] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:40:24] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:40:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:40:31] "[32mPOST /delete_child/4 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:40:31] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:40:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    return render_template('indicators_display.html',
+                         education_indicators=education_indicators,
+                         family_indicators=family_indicators)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column.strftime('%Y-%m-%d') }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:42:24] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:49:21] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:49:21] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:49:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:49:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:49:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:49:30] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:49:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    return render_template('indicators_display.html',
+                         education_indicators=education_indicators,
+                         family_indicators=family_indicators)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column if isinstance(indicator.date_column, str) else indicator.date_column.strftime('%Y-%m-%d') }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:49:35] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:49:41] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:49:46] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:49:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    return render_template('indicators_display.html',
+                         education_indicators=education_indicators,
+                         family_indicators=family_indicators)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column if isinstance(indicator.date_column, str) else indicator.date_column.strftime('%Y-%m-%d') }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:49:49] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    # Format dates before passing to template
+    for indicator in education_indicators:
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:51:28] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    # Format dates before passing to template
+    for indicator in education_indicators:
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:51:28] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    # Format dates before passing to template
+    for indicator in education_indicators:
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:51:29] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    # Format dates before passing to template
+    for indicator in education_indicators:
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:51:29] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    # Format dates before passing to template
+    for indicator in education_indicators:
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:51:29] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    # Format dates before passing to template
+    for indicator in education_indicators:
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:51:31] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    # Format dates before passing to template
+    for indicator in education_indicators:
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:51:31] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    # Format dates before passing to template
+    for indicator in education_indicators:
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:51:32] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    # Format dates before passing to template
+    for indicator in education_indicators:
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:51:32] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    # Format dates before passing to template
+    for indicator in education_indicators:
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:51:32] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    # Format dates before passing to template
+    for indicator in education_indicators:
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:51:36] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    # Format dates before passing to template
+    for indicator in education_indicators:
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:51:51] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    # Format dates before passing to template
+    for indicator in education_indicators:
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:51:51] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    # Format dates before passing to template
+    for indicator in education_indicators:
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:51:51] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    # Format dates before passing to template
+    for indicator in education_indicators:
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 10:51:51] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:19:30] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:19:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:19:31] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:19:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:19:31] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:19:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:19:33] "GET /dashboard HTTP/1.1" 200 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    @app.route('/indicators')
+    @login_required
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <td>{{ indicator.date_column }}</td>
+    ^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:19:36] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    @app.route('/indicators')
+    @login_required
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <tbody>
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:21:51] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    @app.route('/indicators')
+    @login_required
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <tbody>
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:21:52] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    @app.route('/indicators')
+    @login_required
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <tbody>
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:21:52] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    @app.route('/indicators')
+    @login_required
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <tbody>
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:21:52] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    @app.route('/indicators')
+    @login_required
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <tbody>
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:21:53] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:21:59] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:21:59] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:21:59] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:22:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:22:06] "GET /dashboard HTTP/1.1" 200 -
+ERROR:app:Exception on /indicators [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 500, in indicators
+    
+    @app.route('/indicators')
+    @login_required
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    return _render(app, template, context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\templating.py", line 131, in _render
+    rv = template.render(context)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 1295, in render
+    self.environment.handle_exception()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\environment.py", line 942, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\base.html", line 61, in top-level template code
+    {% block content %}{% endblock %}
+    ^^^^^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\templates\indicators_display.html", line 50, in block 'content'
+    <tbody>
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\jinja2\utils.py", line 92, in from_obj
+    if hasattr(obj, "jinja_pass_arg"):
+       ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'str object' has no attribute 'strftime'
+INFO:werkzeug:127.0.0.1 - - [15/May/2025 12:22:09] "[35m[1mGET /indicators HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.236.216:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:14:43] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:14:43] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:14:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:14:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:14:56] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:14:56] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:14:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:01] "GET /indicators HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:13] "GET /data_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:15] "GET /add_family_program_data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:18] "GET /indicators HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:21] "GET /data_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:24] "GET /indicators HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:30] "POST /delete_indicator/education/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:36] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:45] "GET /indicators HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:15:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:18:58] "GET /indicators HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:18:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:19:00] "GET /indicators HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:19:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:19:00] "GET /indicators HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:19:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:19:01] "GET /indicators HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:19:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:19:01] "GET /indicators HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:19:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:19:01] "GET /indicators HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:19:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.236.216:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:19:38] "GET /indicators HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:19:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:19:49] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:19:55] "POST /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:20:00] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:20:13] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:20:15] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:20:17] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:20:17] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:20:17] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:20:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:20:25] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:20:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:21:20] "GET /data_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:21:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:21:37] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:21:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:21:51] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:21:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:21:54] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:21:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:22:18] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:22:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:22:38] "GET /import_csv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:22:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:22:49] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:22:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:22:53] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:22:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:23:40] "GET /data_manager HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:23:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:24:04] "GET /add_family_program_data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:24:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:24:25] "GET /indicators HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:24:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:24:46] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:25:04] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:25:15] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:25:15] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:25:15] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:25:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:26:25] "GET /help HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:26:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:26:28] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:26:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.236.216:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:32:33] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:32:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:32:36] "GET /indicators HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:32:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

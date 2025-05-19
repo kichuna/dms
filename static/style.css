@@ -70,11 +70,14 @@ td .btn {
     text-decoration: none;
     display: inline-block;
     transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
 }
 
 td .btn:hover {
     transform: translateY(-1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
 }
 
 /* Style for View button */
@@ -93,6 +96,7 @@ td .btn-edit {
 td .btn-delete {
     background-color: #f44336;
     color: white;
+    font-family: inherit;
 }
 
 /* Responsive table */

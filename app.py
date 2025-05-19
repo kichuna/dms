@@ -7,6 +7,7 @@ import logging
 import csv
 from io import StringIO
 from datetime import datetime, timedelta
+from werkzeug.security import check_password_hash
 
 logging.basicConfig(filename='app.log', level=logging.ERROR)
 
@@ -18,11 +19,11 @@ if os.environ.get('RENDER'):
     # Production database URL from Render
     app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '').replace('postgres://', 'postgresql://')
 else:
-    # Local SQLite database
-    basedir = os.path.abspath(os.path.dirname(__file__))
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'dms.db')
+    # Local MySQL database - using direct credentials
+    # TODO: Replace 'your_password' with your actual MySQL password
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:''@localhost/children_db'
 
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_TRACK_MODIFICATmanagementNS'] = False
 
 # Initialize SQLAlchemy after configuration
 db = SQLAlchemy(app)
@@ -100,12 +101,12 @@ def login():
         password = request.form['password']
 
         try:
-            user = User.query.filter_by(username=username, password=password).first()
-            if user:
+            user = User.query.filter_by(username=username).first()
+            if user and check_password_hash(user.password, password):
                 login_user(user)
                 return redirect(url_for('data_display'))
             else:
-                flash('Invalid credentials', 'danger')
+                flash('Invalid username or password', 'danger')
         except Exception as e:
             flash(f"Error logging in: {e}", 'danger')
 
@@ -418,6 +419,12 @@ def data_display():
         children = Children.query.filter(Children.name.like(f'%{search_query}%')).all()
     else:
         children = Children.query.all()
+    
+    # Format dates before passing to template
+    for child in children:
+        if child.date_of_birth and not isinstance(child.date_of_birth, str):
+            child.date_of_birth = child.date_of_birth.strftime('%Y-%m-%d')
+    
     return render_template('data_display.html', children=children, search_query=search_query)
 
 @app.route('/child_detail/<int:child_id>')
@@ -496,6 +503,24 @@ def logout():
 def indicators():
     education_indicators = EducationSupportIndicators.query.order_by(EducationSupportIndicators.date_column.desc()).all()
     family_indicators = FamilySupportProgramIndicators.query.order_by(FamilySupportProgramIndicators.date_column.desc()).all()
+    
+    # Format dates before passing to template
+    for indicator in education_indicators:
+        try:
+            if indicator.date_column and not isinstance(indicator.date_column, str):
+                indicator.date_column = indicator.date_column.strftime('%Y-%m-%d')
+        except Exception as e:
+            # If there's an error formatting the date, set it to None
+            indicator.date_column = None
+            
+    for indicator in family_indicators:
+        try:
+            if indicator.date_column and not isinstance(indicator.date_column, str):
+                indicator.date_column = indicator.date_column.strftime('%Y-%m-%d')
+        except Exception as e:
+            # If there's an error formatting the date, set it to None
+            indicator.date_column = None
+    
     return render_template('indicators_display.html', 
                          education_indicators=education_indicators,
                          family_indicators=family_indicators)
