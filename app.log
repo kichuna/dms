@@ -6347,3 +6347,838 @@ INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:32:33] "GET /data_display HTTP/1.1" 
 INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:32:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:32:36] "GET /indicators HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [19/May/2025 09:32:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.236.216:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 12:47:19] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 12:47:19] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 12:47:19] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 12:47:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 12:47:26] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 12:47:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:app:Exception on /data_display [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 806, in _write_bytes
+    self._sock.sendall(data)
+    ~~~~~~~~~~~~~~~~~~^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 562, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 864, in _execute_command
+    self._write_bytes(packet)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 809, in _write_bytes
+    raise err.OperationalError(
+        CR.CR_SERVER_GONE_ERROR, f"MySQL server has gone away ({e!r})"
+    )
+pymysql.err.OperationalError: (2006, "MySQL server has gone away (ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 284, in decorated_view
+    elif not current_user.is_authenticated:
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\werkzeug\local.py", line 318, in __get__
+    obj = instance._get_current_object()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\werkzeug\local.py", line 526, in _get_current_object
+    return get_name(local())
+                    ~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+                                      ~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 370, in _get_user
+    current_app.login_manager._load_user()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\login_manager.py", line 364, in _load_user
+    user = self._user_callback(user_id)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 88, in load_user
+    return User.query.get(int(user_id))
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "<string>", line 2, in get
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 386, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1126, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1135, in _get_impl
+    return self.session._get_impl(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        mapper,
+        ^^^^^^^
+    ...<6 lines>...
+        execution_options=self._execution_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3873, in _get_impl
+    return db_load_fn(
+        self,
+    ...<5 lines>...
+        bind_arguments=bind_arguments,
+    )
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\loading.py", line 694, in load_on_pk_identity
+    session.execute(
+    ~~~~~~~~~~~~~~~^
+        q,
+        ^^
+    ...<2 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2251, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<4 lines>...
+        conn,
+        ^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\context.py", line 306, in orm_execute_statement
+    result = conn.execute(
+        statement, params or {}, execution_options=execution_options
+    )
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1415, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\sql\elements.py", line 523, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1637, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1842, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1982, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2351, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 1963, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 943, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\cursors.py", line 153, in execute
+    result = self._query(query)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\cursors.py", line 322, in _query
+    conn.query(q)
+    ~~~~~~~~~~^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 562, in query
+    self._execute_command(COMMAND.COM_QUERY, sql)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 864, in _execute_command
+    self._write_bytes(packet)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 809, in _write_bytes
+    raise err.OperationalError(
+        CR.CR_SERVER_GONE_ERROR, f"MySQL server has gone away ({e!r})"
+    )
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2006, "MySQL server has gone away (ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))")
+[SQL: SELECT user.id AS user_id, user.username AS user_username, user.password AS user_password, user.role AS user_role 
+FROM user 
+WHERE user.id = %(pk_1)s]
+[parameters: {'pk_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 12:50:18] "[35m[1mGET /data_display HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /login [POST]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3297, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 718, in checkout
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    dbapi_connection = rec.get_connection()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 838, in get_connection
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 901, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 897, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 625, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 96, in login
+    if current_user.is_authenticated:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\werkzeug\local.py", line 318, in __get__
+    obj = instance._get_current_object()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\werkzeug\local.py", line 526, in _get_current_object
+    return get_name(local())
+                    ~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+                                      ~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 370, in _get_user
+    current_app.login_manager._load_user()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\login_manager.py", line 364, in _load_user
+    user = self._user_callback(user_id)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 88, in load_user
+    return User.query.get(int(user_id))
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "<string>", line 2, in get
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 386, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1126, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1135, in _get_impl
+    return self.session._get_impl(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        mapper,
+        ^^^^^^^
+    ...<6 lines>...
+        execution_options=self._execution_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3873, in _get_impl
+    return db_load_fn(
+        self,
+    ...<5 lines>...
+        bind_arguments=bind_arguments,
+    )
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\loading.py", line 694, in load_on_pk_identity
+    session.execute(
+    ~~~~~~~~~~~~~~~^
+        q,
+        ^^
+    ...<2 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2241, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2110, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3273, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, dialect, engine
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2436, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3297, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 718, in checkout
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    dbapi_connection = rec.get_connection()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 838, in get_connection
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 901, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 897, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 625, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 716, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 12:50:26] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 12:50:39] "[32mGET / HTTP/1.1[0m" 302 -
+ERROR:app:Exception on /login [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3297, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 718, in checkout
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    dbapi_connection = rec.get_connection()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 838, in get_connection
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 901, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 897, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 625, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 96, in login
+    if current_user.is_authenticated:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\werkzeug\local.py", line 318, in __get__
+    obj = instance._get_current_object()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\werkzeug\local.py", line 526, in _get_current_object
+    return get_name(local())
+                    ~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+                                      ~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 370, in _get_user
+    current_app.login_manager._load_user()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\login_manager.py", line 364, in _load_user
+    user = self._user_callback(user_id)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 88, in load_user
+    return User.query.get(int(user_id))
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "<string>", line 2, in get
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 386, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1126, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1135, in _get_impl
+    return self.session._get_impl(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        mapper,
+        ^^^^^^^
+    ...<6 lines>...
+        execution_options=self._execution_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3873, in _get_impl
+    return db_load_fn(
+        self,
+    ...<5 lines>...
+        bind_arguments=bind_arguments,
+    )
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\loading.py", line 694, in load_on_pk_identity
+    session.execute(
+    ~~~~~~~~~~~~~~~^
+        q,
+        ^^
+    ...<2 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2241, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2110, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3273, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, dialect, engine
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2436, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3297, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 718, in checkout
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    dbapi_connection = rec.get_connection()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 838, in get_connection
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 901, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 897, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 625, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 716, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 12:50:43] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 12:50:43] "[32mGET / HTTP/1.1[0m" 302 -
+ERROR:app:Exception on /login [GET]
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "C:\Users\juma.hamisi_wezacare\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3297, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 718, in checkout
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    dbapi_connection = rec.get_connection()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 838, in get_connection
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 901, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 897, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 625, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 96, in login
+    if current_user.is_authenticated:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\werkzeug\local.py", line 318, in __get__
+    obj = instance._get_current_object()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\werkzeug\local.py", line 526, in _get_current_object
+    return get_name(local())
+                    ~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+                                      ~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\utils.py", line 370, in _get_user
+    current_app.login_manager._load_user()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\flask_login\login_manager.py", line 364, in _load_user
+    user = self._user_callback(user_id)
+  File "C:\Users\juma.hamisi_wezacare\Documents\Data management system\app.py", line 88, in load_user
+    return User.query.get(int(user_id))
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "<string>", line 2, in get
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 386, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1126, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\query.py", line 1135, in _get_impl
+    return self.session._get_impl(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        mapper,
+        ^^^^^^^
+    ...<6 lines>...
+        execution_options=self._execution_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 3873, in _get_impl
+    return db_load_fn(
+        self,
+    ...<5 lines>...
+        bind_arguments=bind_arguments,
+    )
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\loading.py", line 694, in load_on_pk_identity
+    session.execute(
+    ~~~~~~~~~~~~~~~^
+        q,
+        ^^
+    ...<2 lines>...
+        bind_arguments=bind_arguments,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2365, in execute
+    return self._execute_internal(
+           ~~~~~~~~~~~~~~~~~~~~~~^
+        statement,
+        ^^^^^^^^^^
+    ...<4 lines>...
+        _add_event=_add_event,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2241, in _execute_internal
+    conn = self._connection_for_bind(bind)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 2110, in _connection_for_bind
+    return trans._connection_for_bind(engine, execution_options)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in _connection_for_bind
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\orm\session.py", line 1189, in _connection_for_bind
+    conn = bind.connect()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3273, in connect
+    return self._connection_cls(self)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 147, in __init__
+    Connection._handle_dbapi_exception_noconnection(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        err, dialect, engine
+        ^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 2436, in _handle_dbapi_exception_noconnection
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 145, in __init__
+    self._dbapi_connection = engine.raw_connection()
+                             ~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\base.py", line 3297, in raw_connection
+    return self.pool.connect()
+           ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 449, in connect
+    return _ConnectionFairy._checkout(self)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 1264, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 718, in checkout
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 716, in checkout
+    dbapi_connection = rec.get_connection()
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 838, in get_connection
+    self.__connect()
+    ~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 901, in __connect
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 224, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\pool\base.py", line 897, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 646, in connect
+    return dialect.connect(*cargs, **cparams)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\sqlalchemy\engine\default.py", line 625, in connect
+    return self.loaded_dbapi.connect(*cargs, **cparams)  # type: ignore[no-any-return]  # NOQA: E501
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "c:\Users\juma.hamisi_wezacare\Documents\Data management system\.venv\Lib\site-packages\pymysql\connections.py", line 716, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'localhost' ([WinError 10061] No connection could be made because the target machine actively refused it)")
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [19/May/2025 12:50:47] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.107.216:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 09:32:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 09:32:24] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 09:32:25] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 09:32:31] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 09:32:31] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 09:32:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 09:32:38] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 09:32:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 09:32:46] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 09:32:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 09:35:19] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 09:35:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.6.118:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 10:04:41] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 10:04:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 10:04:48] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 10:04:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.236.216:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 10:59:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 10:59:47] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 10:59:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 10:59:50] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 10:59:50] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 10:59:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 10:59:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 10:59:58] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 10:59:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 11:00:12] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 11:00:12] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 11:00:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

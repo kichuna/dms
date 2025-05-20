@@ -1,22 +1,20 @@
 import sqlite3
+from werkzeug.security import generate_password_hash
 
-# Connect to the database
 conn = sqlite3.connect('dms.db')
 cursor = conn.cursor()
 
-# List all tables
-print("Tables in database:")
-cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
-tables = cursor.fetchall()
-for table in tables:
-    print(f"- {table[0]}")
+username = input("Enter username: ")
+password = input("Enter password: ")
+role = input("Enter role (admin or user): ")
 
-# View contents of a specific table
-table_name = 'education_support_indicators'  # or 'family_support_program_indicators'
-print(f"\nData in table: {table_name}")
-cursor.execute(f"SELECT * FROM {table_name}")
-rows = cursor.fetchall()
-for row in rows:
-    print(row)
+hashed_password = generate_password_hash(password)
+
+try:
+    cursor.execute("INSERT INTO user (username, password, role) VALUES (?, ?, ?)", (username, hashed_password, role))
+    conn.commit()
+    print("User created successfully!")
+except sqlite3.IntegrityError as e:
+    print(f"Error: {e}")
 
 conn.close()

@@ -14,18 +14,14 @@ logging.basicConfig(filename='app.log', level=logging.ERROR)
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY', 'your_secret_key')
 
-# Database Configuration
-if os.environ.get('RENDER'):
-    # Production database URL from Render
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '').replace('postgres://', 'postgresql://')
-else:
-    # Local MySQL database - using direct credentials
-    # TODO: Replace 'your_password' with your actual MySQL password
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:''@localhost/children_db'
+# Absolute path to current directory
+basedir = os.path.abspath(os.path.dirname(__file__))
 
-app.config['SQLALCHEMY_TRACK_MODIFICATmanagementNS'] = False
+# SQLite database file in the same directory
+app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{os.path.join(basedir, 'dms.db')}"
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-# Initialize SQLAlchemy after configuration
+# Initialize SQLAlchemy
 db = SQLAlchemy(app)
 
 # Uploads directory
@@ -90,6 +86,7 @@ def load_user(user_id):
 @app.route('/')
 def index():
     return redirect(url_for('login'))
+
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
