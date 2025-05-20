@@ -33,10 +33,6 @@ ENV/
 # Logs
 *.log
 
-# Database
-*.db
-*.sqlite3
-
 # Distribution
 distribution/
 build/

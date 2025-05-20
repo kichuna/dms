@@ -206,73 +206,99 @@ def data_manager():
 
     return render_template('data_manager.html')
 
-@app.route('/dashboard', methods=['GET', 'POST'])
-def dashboard():
-    dashboard_data = {}
 
-    # Get the selected filter period from the form
+@app.route('/dashboard', methods=['GET', 'POST'])
+@login_required
+def dashboard():
+    # Default filter values
     filter_period = request.form.get('filter-period', 'this-month')
     start_date = None
     end_date = None
 
-    # Date filter logic
+    today = datetime.today()
+
     if filter_period == 'this-month':
-        start_date = datetime.now().replace(day=1).date()
-        end_date = datetime.now().date()
+        start_date = today.replace(day=1)
+        end_date = today
     elif filter_period == 'last-3-months':
-        end_date = datetime.now().date()
-        start_date = (datetime.now() - timedelta(days=90)).date()
+        start_date = today - timedelta(days=90)
+        end_date = today
     elif filter_period == 'this-year':
-        start_date = datetime.now().replace(month=1, day=1).date()
-        end_date = datetime.now().date()
+        start_date = today.replace(month=1, day=1)
+        end_date = today
     elif filter_period == 'custom':
-        start_date_str = request.form.get('start-date', '')
-        end_date_str = request.form.get('end-date', '')
+        start_date = request.form.get('start-date')
+        end_date = request.form.get('end-date')
+        if start_date and end_date:
+            start_date = datetime.strptime(start_date, '%Y-%m-%d')
+            end_date = datetime.strptime(end_date, '%Y-%m-%d')
 
-        if start_date_str and end_date_str:
-            try:
-                start_date = datetime.strptime(start_date_str, '%Y-%m-%d').date()
-                end_date = datetime.strptime(end_date_str, '%Y-%m-%d').date()
-            except ValueError:
-                flash("Invalid custom date format. Please select valid dates.", "danger")
-                return redirect(request.url)
-        else:
-            flash("Please provide both a start and end date for the custom range.", "danger")
-            return redirect(request.url)
+    # Build query filters
+    education_query = EducationSupportIndicators.query
+    family_query = FamilySupportProgramIndicators.query
 
-    # Education Support Indicators
-    education_data = EducationSupportIndicators.query.filter(
-        EducationSupportIndicators.date_column.between(start_date, end_date)
-    ).all()
+    if start_date and end_date:
+        education_query = education_query.filter(EducationSupportIndicators.date_column.between(start_date, end_date))
+        family_query = family_query.filter(FamilySupportProgramIndicators.date_column.between(start_date, end_date))
 
-    dashboard_data.update({
-        'total_enrolled_in_high_school': sum(1 for e in education_data if e.enrolled_in_high_school),
-        'total_enrolled_in_college': sum(1 for e in education_data if e.enrolled_in_college),
-        'total_continued_scholarship_support': sum(1 for e in education_data if e.continued_scholarship_support),
-        'total_supported_with_transport': sum(1 for e in education_data if e.supported_with_transport),
-        'total_supported_with_upkeep': sum(1 for e in education_data if e.supported_with_upkeep),
-        'total_supported_with_scholastic_materials': sum(1 for e in education_data if e.supported_with_scholastic_materials),
-        'total_supported_with_pocket_money': sum(1 for e in education_data if e.supported_with_pocket_money),
-        'total_supported_with_tuition': sum(1 for e in education_data if e.supported_with_tuition)
-    })
+    # Aggregate education support data
+    education_sums = {
+        'total_enrolled_in_high_school': 0,
+        'total_enrolled_in_college': 0,
+        'total_continued_scholarship_support': 0,
+        'total_supported_with_transport': 0,
+        'total_supported_with_upkeep': 0,
+        'total_supported_with_scholastic_materials': 0,
+        'total_supported_with_pocket_money': 0,
+        'total_supported_with_tuition': 0,
+    }
 
-    # Family Support Indicators
-    family_data = FamilySupportProgramIndicators.query.filter(
-        FamilySupportProgramIndicators.date_column.between(start_date, end_date)
-    ).all()
+    for record in education_query.all():
+        education_sums['total_enrolled_in_high_school'] += record.enrolled_in_high_school or 0
+        education_sums['total_enrolled_in_college'] += record.enrolled_in_college or 0
+        education_sums['total_continued_scholarship_support'] += record.continued_scholarship_support or 0
+        education_sums['total_supported_with_transport'] += record.supported_with_transport or 0
+        education_sums['total_supported_with_upkeep'] += record.supported_with_upkeep or 0
+        education_sums['total_supported_with_scholastic_materials'] += record.supported_with_scholastic_materials or 0
+        education_sums['total_supported_with_pocket_money'] += record.supported_with_pocket_money or 0
+        education_sums['total_supported_with_tuition'] += record.supported_with_tuition or 0
 
-    dashboard_data.update({
-        'total_financial_support': sum(1 for f in family_data if f.financial_support),
-        'total_housing_support': sum(1 for f in family_data if f.housing_support),
-        'total_healthcare_support': sum(1 for f in family_data if f.healthcare_support),
-        'total_food_support': sum(1 for f in family_data if f.food_support),
-        'total_educational_support': sum(1 for f in family_data if f.educational_support),
-        'total_employment_support': sum(1 for f in family_data if f.employment_support),
-        'total_emotional_support': sum(1 for f in family_data if f.emotional_support),
-        'total_legal_support': sum(1 for f in family_data if f.legal_support)
-    })
+    # Aggregate family support data
+    family_sums = {
+        'total_financial_support': 0,
+        'total_housing_support': 0,
+        'total_healthcare_support': 0,
+        'total_food_support': 0,
+        'total_educational_support': 0,
+        'total_employment_support': 0,
+        'total_emotional_support': 0,
+        'total_legal_support': 0,
+    }
 
-    return render_template('dashboard.html', **dashboard_data)
+    for record in family_query.all():
+        family_sums['total_financial_support'] += record.financial_support or 0
+        family_sums['total_housing_support'] += record.housing_support or 0
+        family_sums['total_healthcare_support'] += record.healthcare_support or 0
+        family_sums['total_food_support'] += record.food_support or 0
+        family_sums['total_educational_support'] += record.educational_support or 0
+        family_sums['total_employment_support'] += record.employment_support or 0
+        family_sums['total_emotional_support'] += record.emotional_support or 0
+        family_sums['total_legal_support'] += record.legal_support or 0
+
+    # Pass all values to template
+    return render_template("dashboard.html",
+        filter_period=filter_period,
+        start_date=start_date.strftime('%Y-%m-%d') if start_date else '',
+        end_date=end_date.strftime('%Y-%m-%d') if end_date else '',
+        **education_sums,
+        **family_sums
+    )
+
+
+
+
+
+
 
 @app.route('/reports', methods=['GET', 'POST'])
 def reports():
@@ -582,5 +608,6 @@ def delete_indicator(program, indicator_id):
 
 if __name__ == '__main__':
     with app.app_context():
+        app.run(debug=True)
         db.create_all()
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
