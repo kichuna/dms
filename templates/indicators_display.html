@@ -20,7 +20,8 @@
     <!-- Add New Entry Button (Admin Only) -->
     {% if current_user.role == 'admin' %}
     <div>
-        <a href="{{ url_for('data_manager') }}" class="btn btn-success" style="margin-right: 10px;">Add Education Support Data</a>
+        <a href="{{ url_for('data_manager') }}" class="btn btn-success" style="margin-right: 10px;">Add Education
+            Support Data</a>
         <a href="{{ url_for('add_family_program_data') }}" class="btn btn-success">Add Family Support Data</a>
     </div>
     {% endif %}
@@ -53,48 +54,57 @@
                     <td>{{ indicator.date_column if indicator.date_column else 'N/A' }}</td>
                     <td><span class="display-value">{{ indicator.enrolled_in_high_school }}</span>
                         {% if current_user.role == 'admin' %}
-                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.enrolled_in_high_school }}">
+                        <input type="number" class="edit-input" style="display: none;"
+                            value="{{ indicator.enrolled_in_high_school }}">
                         {% endif %}
                     </td>
                     <td><span class="display-value">{{ indicator.enrolled_in_college }}</span>
                         {% if current_user.role == 'admin' %}
-                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.enrolled_in_college }}">
+                        <input type="number" class="edit-input" style="display: none;"
+                            value="{{ indicator.enrolled_in_college }}">
                         {% endif %}
                     </td>
                     <td><span class="display-value">{{ indicator.continued_scholarship_support }}</span>
                         {% if current_user.role == 'admin' %}
-                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.continued_scholarship_support }}">
+                        <input type="number" class="edit-input" style="display: none;"
+                            value="{{ indicator.continued_scholarship_support }}">
                         {% endif %}
                     </td>
                     <td><span class="display-value">{{ indicator.supported_with_transport }}</span>
                         {% if current_user.role == 'admin' %}
-                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.supported_with_transport }}">
+                        <input type="number" class="edit-input" style="display: none;"
+                            value="{{ indicator.supported_with_transport }}">
                         {% endif %}
                     </td>
                     <td><span class="display-value">{{ indicator.supported_with_upkeep }}</span>
                         {% if current_user.role == 'admin' %}
-                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.supported_with_upkeep }}">
+                        <input type="number" class="edit-input" style="display: none;"
+                            value="{{ indicator.supported_with_upkeep }}">
                         {% endif %}
                     </td>
                     <td><span class="display-value">{{ indicator.supported_with_scholastic_materials }}</span>
                         {% if current_user.role == 'admin' %}
-                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.supported_with_scholastic_materials }}">
+                        <input type="number" class="edit-input" style="display: none;"
+                            value="{{ indicator.supported_with_scholastic_materials }}">
                         {% endif %}
                     </td>
                     <td><span class="display-value">{{ indicator.supported_with_pocket_money }}</span>
                         {% if current_user.role == 'admin' %}
-                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.supported_with_pocket_money }}">
+                        <input type="number" class="edit-input" style="display: none;"
+                            value="{{ indicator.supported_with_pocket_money }}">
                         {% endif %}
                     </td>
                     <td><span class="display-value">{{ indicator.supported_with_tuition }}</span>
                         {% if current_user.role == 'admin' %}
-                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.supported_with_tuition }}">
+                        <input type="number" class="edit-input" style="display: none;"
+                            value="{{ indicator.supported_with_tuition }}">
                         {% endif %}
                     </td>
                     {% if current_user.role == 'admin' %}
                     <td>
                         <button onclick="editRow(this)" class="btn btn-sm btn-primary">Edit</button>
-                        <button onclick="saveRow(this, 'education')" class="btn btn-sm btn-success" style="display: none;">Save</button>
+                        <button onclick="saveRow(this, 'education')" class="btn btn-sm btn-success"
+                            style="display: none;">Save</button>
                         <button onclick="deleteRow(this, 'education')" class="btn btn-sm btn-danger">Delete</button>
                     </td>
                     {% endif %}
@@ -132,48 +142,57 @@
                     <td>{{ indicator.date_column if indicator.date_column else 'N/A' }}</td>
                     <td><span class="display-value">{{ indicator.financial_support }}</span>
                         {% if current_user.role == 'admin' %}
-                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.financial_support }}">
+                        <input type="number" class="edit-input" style="display: none;"
+                            value="{{ indicator.financial_support }}">
                         {% endif %}
                     </td>
                     <td><span class="display-value">{{ indicator.housing_support }}</span>
                         {% if current_user.role == 'admin' %}
-                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.housing_support }}">
+                        <input type="number" class="edit-input" style="display: none;"
+                            value="{{ indicator.housing_support }}">
                         {% endif %}
                     </td>
                     <td><span class="display-value">{{ indicator.healthcare_support }}</span>
                         {% if current_user.role == 'admin' %}
-                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.healthcare_support }}">
+                        <input type="number" class="edit-input" style="display: none;"
+                            value="{{ indicator.healthcare_support }}">
                         {% endif %}
                     </td>
                     <td><span class="display-value">{{ indicator.food_support }}</span>
                         {% if current_user.role == 'admin' %}
-                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.food_support }}">
+                        <input type="number" class="edit-input" style="display: none;"
+                            value="{{ indicator.food_support }}">
                         {% endif %}
                     </td>
                     <td><span class="display-value">{{ indicator.educational_support }}</span>
                         {% if current_user.role == 'admin' %}
-                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.educational_support }}">
+                        <input type="number" class="edit-input" style="display: none;"
+                            value="{{ indicator.educational_support }}">
                         {% endif %}
                     </td>
                     <td><span class="display-value">{{ indicator.employment_support }}</span>
                         {% if current_user.role == 'admin' %}
-                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.employment_support }}">
+                        <input type="number" class="edit-input" style="display: none;"
+                            value="{{ indicator.employment_support }}">
                         {% endif %}
                     </td>
                     <td><span class="display-value">{{ indicator.emotional_support }}</span>
                         {% if current_user.role == 'admin' %}
-                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.emotional_support }}">
+                        <input type="number" class="edit-input" style="display: none;"
+                            value="{{ indicator.emotional_support }}">
                         {% endif %}
                     </td>
                     <td><span class="display-value">{{ indicator.legal_support }}</span>
                         {% if current_user.role == 'admin' %}
-                        <input type="number" class="edit-input" style="display: none;" value="{{ indicator.legal_support }}">
+                        <input type="number" class="edit-input" style="display: none;"
+                            value="{{ indicator.legal_support }}">
                         {% endif %}
                     </td>
                     {% if current_user.role == 'admin' %}
                     <td>
                         <button onclick="editRow(this)" class="btn btn-sm btn-primary">Edit</button>
-                        <button onclick="saveRow(this, 'family')" class="btn btn-sm btn-success" style="display: none;">Save</button>
+                        <button onclick="saveRow(this, 'family')" class="btn btn-sm btn-success"
+                            style="display: none;">Save</button>
                         <button onclick="deleteRow(this, 'family')" class="btn btn-sm btn-danger">Delete</button>
                     </td>
                     {% endif %}
@@ -185,153 +204,190 @@
 </div>
 
 <script>
-function switchProgram(program) {
-    // Hide all program sections
-    document.querySelectorAll('.program-section').forEach(section => {
-        section.style.display = 'none';
-    });
-    
-    // Show selected program section
-    document.getElementById(program + '-program').style.display = 'block';
-    
-    // Update button styles
-    document.querySelectorAll('.tab-btn').forEach(btn => {
-        btn.style.backgroundColor = '#f0f0f0';
-        btn.style.color = '#333';
-    });
-    event.target.style.backgroundColor = '#4CAF50';
-    event.target.style.color = 'white';
-}
+    function switchProgram(program) {
+        // Hide all program sections
+        document.querySelectorAll('.program-section').forEach(section => {
+            section.style.display = 'none';
+        });
 
-function editRow(button) {
-    const row = button.closest('tr');
-    row.querySelectorAll('.display-value').forEach(span => span.style.display = 'none');
-    row.querySelectorAll('.edit-input').forEach(input => input.style.display = '');
-    button.style.display = 'none';
-    button.nextElementSibling.style.display = '';
-}
+        // Show selected program section
+        document.getElementById(program + '-program').style.display = 'block';
 
-function saveRow(button, program) {
-    const row = button.closest('tr');
-    const id = row.dataset.id;
-    const inputs = Array.from(row.querySelectorAll('.edit-input'));
-    const values = inputs.map(input => parseInt(input.value) || 0);
-
-    fetch('/update_indicator', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            id: id,
-            program: program,
-            values: values
-        })
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            inputs.forEach((input, index) => {
-                const span = input.previousElementSibling;
-                span.textContent = input.value;
-                span.style.display = '';
-                input.style.display = 'none';
-            });
-            button.style.display = 'none';
-            button.previousElementSibling.style.display = '';
-        } else {
-            alert('Error updating record: ' + data.message);
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Error updating record');
-    });
-}
-
-function deleteRow(button, program) {
-    if (!confirm('Are you sure you want to delete this record?')) {
-        return;
+        // Update button styles
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.style.backgroundColor = '#f0f0f0';
+            btn.style.color = '#333';
+        });
+        event.target.style.backgroundColor = '#4CAF50';
+        event.target.style.color = 'white';
     }
 
-    const row = button.closest('tr');
-    const id = row.dataset.id;
+    function editRow(button) {
+        const row = button.closest('tr');
+        row.querySelectorAll('.display-value').forEach(span => span.style.display = 'none');
+        row.querySelectorAll('.edit-input').forEach(input => input.style.display = '');
+        button.style.display = 'none';
+        button.nextElementSibling.style.display = '';
+    }
 
-    fetch(`/delete_indicator/${program}/${id}`, {
-        method: 'POST'
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            row.remove();
-        } else {
-            alert('Error deleting record: ' + data.message);
+    function saveRow(button, program) {
+        const row = button.closest('tr');
+        const id = row.dataset.id;
+        const inputs = Array.from(row.querySelectorAll('.edit-input'));
+        const values = inputs.map(input => parseInt(input.value) || 0);
+
+        fetch('/update_indicator', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                id: id,
+                program: program,
+                values: values
+            })
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    inputs.forEach((input, index) => {
+                        const span = input.previousElementSibling;
+                        span.textContent = input.value;
+                        span.style.display = '';
+                        input.style.display = 'none';
+                    });
+                    button.style.display = 'none';
+                    button.previousElementSibling.style.display = '';
+                } else {
+                    alert('Error updating record: ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error updating record');
+            });
+    }
+
+    function deleteRow(button, program) {
+        if (!confirm('Are you sure you want to delete this record?')) {
+            return;
         }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Error deleting record');
-    });
-}
+
+        const row = button.closest('tr');
+        const id = row.dataset.id;
+
+        fetch(`/delete_indicator/${program}/${id}`, {
+            method: 'POST'
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    row.remove();
+                } else {
+                    alert('Error deleting record: ' + data.message);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error deleting record');
+            });
+    }
 </script>
 
 <style>
-.table-responsive {
-    overflow-x: auto;
-    margin-bottom: 20px;
-}
+    .table-responsive {
+        overflow-x: auto;
+        margin-bottom: 20px;
+    }
 
-.edit-input {
-    width: 60px;
-}
+    .edit-input {
+        width: 60px;
+    }
 
-.program-section {
-    margin-top: 20px;
-}
+    .program-section {
+        margin-top: 20px;
+    }
 
-.btn {
-    margin: 0 2px;
-    padding: 6px 12px;
-    border-radius: 4px;
-    font-size: 13px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-}
+    .btn {
+        margin: 0 2px;
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 13px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
 
-.btn-primary {
-    background-color: #2196F3;
-    color: white;
-}
+    .btn-primary {
+        background-color: #2196F3;
+        color: white;
+    }
 
-.btn-primary:hover {
-    background-color: #1976D2;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
+    .btn-primary:hover {
+        background-color: #1976D2;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
 
-.btn-success {
-    background-color: #4CAF50;
-    color: white;
-}
+    .btn-success {
+        background-color: #4CAF50;
+        color: white;
+    }
 
-.btn-success:hover {
-    background-color: #388E3C;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
+    .btn-success:hover {
+        background-color: #388E3C;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
 
-.btn-danger {
-    background-color: #f44336;
-    color: white;
-}
+    .btn-danger {
+        background-color: #f44336;
+        color: white;
+    }
 
-.btn-danger:hover {
-    background-color: #d32f2f;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
+    .btn-danger:hover {
+        background-color: #d32f2f;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
 
-.btn:active {
-    transform: translateY(1px);
-}
+    .btn:active {
+        transform: translateY(1px);
+    }
+
+    /* Table base styles */
+    table.table {
+        width: 100%;
+        border-collapse: collapse;
+        border: 1px solid #ddd;
+    }
+
+    /* Table header with green background */
+    table.table thead tr {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+    /* Table cells */
+    table.table th,
+    table.table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Hover effect on entire row */
+    table.table tbody tr:hover {
+        background-color: #f9f9f9;
+    }
+
+    /* Hover effect on individual cell */
+    table.table tbody td:hover {
+        background-color: #e6f2ff;
+    }
+
+    /* Optional: cursor pointer on hover for better UX */
+    table.table tbody td {
+        cursor: default;
+    }
 </style>
 {% endblock %}
