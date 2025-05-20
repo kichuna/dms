@@ -7430,3 +7430,192 @@ WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 585-019-027
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:33:51] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:33:51] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:33:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:33:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:33:55] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:33:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:34:01] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:34:01] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:34:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:34:14] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:34:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:34:24] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:34:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:34:33] "GET /help HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:34:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:35:27] "GET /help HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:35:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:35:31] "GET /data_entry HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:35:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:35:35] "GET /import_csv HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:35:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:35:39] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:35:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:35:44] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:35:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:35:51] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:35:56] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:35:56] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:35:56] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:35:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:36:48] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:42:21] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:42:21] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:42:22] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:42:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:42:31] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:42:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.132:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:42:45] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:42:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.132:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:45:42] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:45:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:46:04] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:46:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:53:59] "GET /indicators HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:53:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:54:03] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:54:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:54:08] "GET /indicators HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:54:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:54:58] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:55:12] "POST /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:57:05] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:57:08] "POST /reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:57:17] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:57:17] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:57:17] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:57:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:57:23] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:57:23] "[32mGET /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:57:23] "GET /data_display HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:57:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:57:28] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:58:38] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:58:40] "GET /dashboard HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 15:58:41] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Data management system\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.132:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 16:02:46] "GET /reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 16:02:49] "POST /reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 16:02:52] "[33mGET /export/pdf HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 16:02:54] "[33mGET /export/excel HTTP/1.1[0m" 404 -
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.132:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 16:08:04] "POST /reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 16:09:10] "POST /reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 16:09:21] "POST /reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 16:10:52] "POST /reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 16:14:10] "POST /reports HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\juma.hamisi_wezacare\\Documents\\Data management system\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.132:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 16:15:56] "POST /reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 16:16:01] "POST /reports HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/May/2025 16:16:11] "POST /reports HTTP/1.1" 200 -
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 585-019-027
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.132:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat

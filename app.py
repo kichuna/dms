@@ -295,11 +295,6 @@ def dashboard():
     )
 
 
-
-
-
-
-
 @app.route('/reports', methods=['GET', 'POST'])
 def reports():
     labels = []
@@ -311,7 +306,7 @@ def reports():
         start_date = None
         end_date = None
 
-        # Handle date range based on filter
+        # Handle date range
         if filter_period == 'this-month':
             start_date = datetime.now().replace(day=1).date()
             end_date = datetime.now().date()
@@ -331,45 +326,52 @@ def reports():
                 flash("Invalid custom date format. Please use YYYY-MM-DD.", "danger")
                 return redirect(request.url)
 
+        # Report type: EDUCATION
         if report_type == 'education':
             labels = [
                 'High School', 'College', 'Scholarship', 'Transport',
                 'Upkeep', 'Materials', 'Pocket Money', 'Tuition'
             ]
-            education_data = EducationSupportIndicators.query.filter(
+            data = EducationSupportIndicators.query.filter(
                 EducationSupportIndicators.date_column.between(start_date, end_date)
             ).all()
+
             values = [
-                sum(1 for e in education_data if e.enrolled_in_high_school),
-                sum(1 for e in education_data if e.enrolled_in_college),
-                sum(1 for e in education_data if e.continued_scholarship_support),
-                sum(1 for e in education_data if e.supported_with_transport),
-                sum(1 for e in education_data if e.supported_with_upkeep),
-                sum(1 for e in education_data if e.supported_with_scholastic_materials),
-                sum(1 for e in education_data if e.supported_with_pocket_money),
-                sum(1 for e in education_data if e.supported_with_tuition)
+                sum(e.enrolled_in_high_school or 0 for e in data),
+                sum(e.enrolled_in_college or 0 for e in data),
+                sum(e.continued_scholarship_support or 0 for e in data),
+                sum(e.supported_with_transport or 0 for e in data),
+                sum(e.supported_with_upkeep or 0 for e in data),
+                sum(e.supported_with_scholastic_materials or 0 for e in data),
+                sum(e.supported_with_pocket_money or 0 for e in data),
+                sum(e.supported_with_tuition or 0 for e in data)
             ]
 
+        # Report type: FAMILY
         elif report_type == 'family':
             labels = [
                 'Financial', 'Housing', 'Healthcare', 'Food',
                 'Education', 'Employment', 'Emotional', 'Legal'
             ]
-            family_data = FamilySupportProgramIndicators.query.filter(
+            data = FamilySupportProgramIndicators.query.filter(
                 FamilySupportProgramIndicators.date_column.between(start_date, end_date)
             ).all()
+
             values = [
-                sum(1 for f in family_data if f.financial_support),
-                sum(1 for f in family_data if f.housing_support),
-                sum(1 for f in family_data if f.healthcare_support),
-                sum(1 for f in family_data if f.food_support),
-                sum(1 for f in family_data if f.educational_support),
-                sum(1 for f in family_data if f.employment_support),
-                sum(1 for f in family_data if f.emotional_support),
-                sum(1 for f in family_data if f.legal_support)
+                sum(f.financial_support or 0 for f in data),
+                sum(f.housing_support or 0 for f in data),
+                sum(f.healthcare_support or 0 for f in data),
+                sum(f.food_support or 0 for f in data),
+                sum(f.educational_support or 0 for f in data),
+                sum(f.employment_support or 0 for f in data),
+                sum(f.emotional_support or 0 for f in data),
+                sum(f.legal_support or 0 for f in data)
             ]
 
-    return render_template('reports.html', labels=labels, values=values)
+    return render_template('reports.html', labels=labels, values=values,report_type=report_type)
+
+
+
 
 @app.route('/add_family_program_data', methods=['GET', 'POST'])
 @login_required

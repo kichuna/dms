@@ -60,6 +60,24 @@
         h1 {
             font-weight: 600;
         }
+
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            .chart-container, .chart-container * {
+                visibility: visible;
+            }
+            .chart-container {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                border: none;
+            }
+        }
     </style>
 </head>
 <body>
@@ -82,25 +100,25 @@
             <div class="col-md-4">
                 <label class="form-label">Report Type</label>
                 <select class="form-select" name="report_type">
-                    <option value="education">Education Support</option>
-                    <option value="family">Family Support</option>
+                    <option value="education" {% if report_type == 'education' %}selected{% endif %}>Education Support</option>
+                    <option value="family" {% if report_type == 'family' %}selected{% endif %}>Family Support</option>
                 </select>
             </div>
 
             <div class="col-md-4">
                 <label class="form-label">Time Period</label>
                 <select class="form-select" name="period" id="periodSelect">
-                    <option value="this-month">This Month</option>
-                    <option value="last-3-months">Last 3 Months</option>
-                    <option value="this-year">This Year</option>
-                    <option value="custom">Custom</option>
+                    <option value="this-month" {% if period == 'this-month' %}selected{% endif %}>This Month</option>
+                    <option value="last-3-months" {% if period == 'last-3-months' %}selected{% endif %}>Last 3 Months</option>
+                    <option value="this-year" {% if period == 'this-year' %}selected{% endif %}>This Year</option>
+                    <option value="custom" {% if period == 'custom' %}selected{% endif %}>Custom</option>
                 </select>
             </div>
 
-            <div class="col-md-4" id="custom-date-range" style="display: none;">
+            <div class="col-md-4" id="custom-date-range" style="display: {% if period == 'custom' %}block{% else %}none{% endif %};">
                 <label class="form-label">Custom Date Range</label>
-                <input type="date" name="start_date" class="form-control mb-2">
-                <input type="date" name="end_date" class="form-control">
+                <input type="date" name="start_date" class="form-control mb-2" value="{{ start_date if start_date is defined else '' }}">
+                <input type="date" name="end_date" class="form-control" value="{{ end_date if end_date is defined else '' }}">
             </div>
 
             <div class="col-12 mt-2">
@@ -110,8 +128,9 @@
 
         <!-- Export Buttons -->
         <div class="export-buttons">
-            <a href="/export/pdf" class="btn btn-outline-danger me-2"><i class="fa fa-file-pdf-o"></i> Export PDF</a>
-            <a href="/export/excel" class="btn btn-outline-success"><i class="fa fa-file-excel-o"></i> Export Excel</a>
+           
+            <button id="exportJpegBtn" class="btn btn-outline-secondary"><i class="fa fa-picture-o"></i> Export JPEG</button>
+            <button id="printChartBtn" class="btn btn-outline-info"><i class="fa fa-print"></i> Print Chart</button>
         </div>
 
         <!-- Chart Container -->
@@ -127,7 +146,12 @@
             document.getElementById('custom-date-range').style.display = this.value === 'custom' ? 'block' : 'none';
         });
 
-        // Render Chart
+        // Chart title dictionary
+        const chartTitle = {
+            'education': 'Education Support Report',
+            'family': 'Family Support Report'
+        };
+
         const ctx = document.getElementById('reportChart').getContext('2d');
         const reportChart = new Chart(ctx, {
             type: 'bar',
@@ -153,6 +177,15 @@
                     },
                     legend: {
                         display: false
+                    },
+                    title: {
+                        display: true,
+                        text: chartTitle["{{ report_type }}"] || 'Report Chart',
+                        font: {
+                            size: 20,
+                            weight: 'bold'
+                        },
+                        color: '#333'
                     }
                 },
                 responsive: true,
@@ -160,9 +193,44 @@
                     y: {
                         beginAtZero: true
                     }
+                },
+                layout: {
+                    padding: 10
                 }
             },
             plugins: [ChartDataLabels]
+        });
+
+        // Export JPEG with white background
+        document.getElementById('exportJpegBtn').addEventListener('click', function () {
+            const canvas = document.getElementById('reportChart');
+            const tempCanvas = document.createElement('canvas');
+            const ctxTemp = tempCanvas.getContext('2d');
+
+            // Set temp canvas size
+            tempCanvas.width = canvas.width;
+            tempCanvas.height = canvas.height;
+
+            // Fill white background
+            ctxTemp.fillStyle = '#fff';
+            ctxTemp.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
+
+            // Draw original canvas onto temp canvas
+            ctxTemp.drawImage(canvas, 0, 0);
+
+            // Create JPEG data URL and trigger download
+            const jpegUrl = tempCanvas.toDataURL('image/jpeg', 1.0);
+            const link = document.createElement('a');
+            link.href = jpegUrl;
+            link.download = (chartTitle["{{ report_type }}"] || 'report-chart') + '.jpeg';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+
+        // Print chart button
+        document.getElementById('printChartBtn').addEventListener('click', function () {
+            window.print();
         });
     </script>
 
