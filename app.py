@@ -494,6 +494,8 @@ def edit_child(child_id):
 
     return render_template('edit_child.html', child=child)
 
+
+
 @app.route('/delete_child/<int:child_id>', methods=['POST'])
 @login_required
 def delete_child(child_id):

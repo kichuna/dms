@@ -64,29 +64,29 @@
     <table class="report-table">
         <tr>
             <th>Full Name</th>
-            <td>{{ child[1] }}</td>
+            <td>{{ child.name }}</td>
         </tr>
         <tr>
             <th>Date of Birth</th>
-            <td>{{ child[2] }}</td>
+            <td>{{ child.date_of_birth }}</td>
         </tr>
         <tr>
             <th>Gender</th>
-            <td>{{ child[3] }}</td>
+            <td>{{ child.gender }}</td>
         </tr>
         <tr>
             <th>Guardian Name</th>
-            <td>{{ child[4] }}</td>
+            <td>{{ child.guardian_name }}</td>
         </tr>
         <tr>
             <th>Address</th>
-            <td>{{ child[5] }}</td>
+            <td>{{ child.address }}</td>
         </tr>
     </table>
 
     <div class="photo-container">
-        {% if child[10] %}
-            <img src="{{ url_for('static', filename='uploads/' ~ child[10]) }}" alt="{{ child[1] }}'s photo">
+        {% if child.photo_filename %}
+            <img src="{{ url_for('static', filename='uploads/' ~ child.photo_filename) }}" alt="{{ child.full_name }}'s photo">
         {% else %}
             <p><em>No photo available</em></p>
         {% endif %}
