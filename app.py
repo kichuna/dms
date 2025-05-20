@@ -295,10 +295,12 @@ def dashboard():
     )
 
 
+
 @app.route('/reports', methods=['GET', 'POST'])
 def reports():
     labels = []
     values = []
+    report_type = ""  # Initialize to avoid UnboundLocalError
 
     if request.method == 'POST':
         report_type = request.form.get('report_type')
@@ -306,7 +308,7 @@ def reports():
         start_date = None
         end_date = None
 
-        # Handle date range
+        # Date range handling
         if filter_period == 'this-month':
             start_date = datetime.now().replace(day=1).date()
             end_date = datetime.now().date()
@@ -326,7 +328,7 @@ def reports():
                 flash("Invalid custom date format. Please use YYYY-MM-DD.", "danger")
                 return redirect(request.url)
 
-        # Report type: EDUCATION
+        # EDUCATION REPORT
         if report_type == 'education':
             labels = [
                 'High School', 'College', 'Scholarship', 'Transport',
@@ -347,7 +349,7 @@ def reports():
                 sum(e.supported_with_tuition or 0 for e in data)
             ]
 
-        # Report type: FAMILY
+        # FAMILY REPORT
         elif report_type == 'family':
             labels = [
                 'Financial', 'Housing', 'Healthcare', 'Food',
@@ -368,9 +370,7 @@ def reports():
                 sum(f.legal_support or 0 for f in data)
             ]
 
-    return render_template('reports.html', labels=labels, values=values,report_type=report_type)
-
-
+    return render_template('reports.html', labels=labels, values=values, report_type=report_type)
 
 
 @app.route('/add_family_program_data', methods=['GET', 'POST'])
