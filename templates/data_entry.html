@@ -3,6 +3,7 @@
 {% block content %}
 <div class="data-entry-container">
     <form method="POST" enctype="multipart/form-data" class="data-entry-form">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() if csrf_token else '' }}">
         <h2>Data Entry</h2>
 
         <!-- Child's Basic Information -->

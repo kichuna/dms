@@ -76,6 +76,7 @@
 
 <div class="login-container">
     <form method="POST" class="login-form">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() if csrf_token else '' }}">
         <h2>Login</h2>
         <div class="form-group">
             <label for="username">Username</label>

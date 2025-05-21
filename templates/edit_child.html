@@ -85,6 +85,7 @@
 <div class="form-container">
     <h2>Edit Child Record</h2>
     <form method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() if csrf_token else '' }}">
         <div class="form-group">
             <label for="name">Full Name</label>
             <input type="text" name="name" value="{{ child.name }}" required>

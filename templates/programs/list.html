@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Custom Programs</h2>
+        {% if current_user.role == 'admin' %}
+        <a href="{{ url_for('create_program') }}" class="btn btn-primary">
+            <i class="fas fa-plus"></i> Create New Program
+        </a>
+        {% endif %}
+    </div>
+
+    <div class="row">
+        {% for program in programs %}
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h3 class="card-title mb-0">{{ program.name }}</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">{{ program.description }}</p>
+                </div>
+                <div class="card-footer">
+                    <div class="btn-group">
+                        <a href="{{ url_for('view_program_data', program_id=program.id) }}" class="btn btn-info">
+                            <i class="fas fa-table"></i> View Data
+                        </a>
+                        <a href="{{ url_for('add_program_data', program_id=program.id) }}" class="btn btn-success">
+                            <i class="fas fa-plus"></i> Add Data
+                        </a>
+                        <a href="{{ url_for('programs_dashboard') }}" class="btn btn-primary">
+                            <i class="fas fa-chart-bar"></i> Dashboard
+                        </a>
+                        {% if current_user.role == 'admin' %}
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal{{ program.id }}">
+                            <i class="fas fa-trash"></i> Delete
+                        </button>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Delete Confirmation Modal -->
+        {% if current_user.role == 'admin' %}
+        <div class="modal fade" id="deleteModal{{ program.id }}" tabindex="-1" aria-labelledby="deleteModalLabel{{ program.id }}" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="deleteModalLabel{{ program.id }}">Confirm Delete</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to delete the program "{{ program.name }}"? This action cannot be undone and will delete all associated data.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <form action="{{ url_for('delete_program', program_id=program.id) }}" method="POST" class="d-inline">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() if csrf_token else '' }}">
+                            <button type="submit" class="btn btn-danger">Delete Program</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+        {% else %}
+        <div class="col-12">
+            <div class="alert alert-info">
+                No programs have been created yet.
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize all modals
+    var modals = document.querySelectorAll('.modal');
+    modals.forEach(function(modal) {
+        new bootstrap.Modal(modal);
+    });
+
+    // Add event listeners to delete forms
+    var deleteForms = document.querySelectorAll('form[action*="/delete"]');
+    deleteForms.forEach(function(form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            if (confirm('Are you absolutely sure you want to delete this program? This action cannot be undone.')) {
+                this.submit();
+            }
+        });
+    });
+});
+</script>
+{% endblock %}
+{% endblock %} 

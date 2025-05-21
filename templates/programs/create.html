@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2>Create New Program</h2>
+    
+    <div class="card">
+        <div class="card-body">
+            <form method="POST" id="programForm">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() if csrf_token else '' }}">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Program Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                </div>
+
+                <h4 class="mt-4">Program Fields</h4>
+                <div id="fieldsContainer">
+                    <!-- Field templates will be added here -->
+                </div>
+
+                <button type="button" class="btn btn-secondary mt-3" onclick="addField()">
+                    <i class="fas fa-plus"></i> Add Field
+                </button>
+
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-primary">Create Program</button>
+                    <a href="{{ url_for('list_programs') }}" class="btn btn-secondary">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<template id="fieldTemplate">
+    <div class="field-group mb-3 p-3 border rounded">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <h5 class="mb-0">Field</h5>
+            <button type="button" class="btn btn-danger btn-sm" onclick="removeField(this)">
+                <i class="fas fa-trash"></i>
+            </button>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-2">
+                <label class="form-label">Field Name</label>
+                <input type="text" class="form-control" name="field_name[]" required
+                       placeholder="e.g., student_count">
+            </div>
+            <div class="col-md-6 mb-2">
+                <label class="form-label">Field Label</label>
+                <input type="text" class="form-control" name="field_label[]" required
+                       placeholder="e.g., Number of Students">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-2">
+                <label class="form-label">Field Type</label>
+                <select class="form-select" name="field_type[]" required>
+                    <option value="text">Text</option>
+                    <option value="number">Number</option>
+                    <option value="date">Date</option>
+                    <option value="textarea">Long Text</option>
+                </select>
+            </div>
+            <div class="col-md-6 mb-2">
+                <div class="form-check mt-4">
+                    <input type="checkbox" class="form-check-input" name="field_required[]" value="true" checked>
+                    <label class="form-check-label">Required Field</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+function addField() {
+    const template = document.getElementById('fieldTemplate');
+    const container = document.getElementById('fieldsContainer');
+    const clone = template.content.cloneNode(true);
+    container.appendChild(clone);
+}
+
+function removeField(button) {
+    button.closest('.field-group').remove();
+}
+
+// Add first field on page load
+document.addEventListener('DOMContentLoaded', addField);
+</script>
+{% endblock %} 
