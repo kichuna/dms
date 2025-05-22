@@ -11,6 +11,37 @@
         </div>
     </div>
 
+    <!-- Date Range Filter Form -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <form method="POST" class="row g-3">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() if csrf_token else '' }}">
+                <div class="col-md-3">
+                    <label for="filter-period" class="form-label">Filter Period</label>
+                    <select class="form-select" id="filter-period" name="filter-period" onchange="toggleCustomDates(this.value)">
+                        <option value="this-month" {% if filter_period == 'this-month' %}selected{% endif %}>This Month</option>
+                        <option value="last-3-months" {% if filter_period == 'last-3-months' %}selected{% endif %}>Last 3 Months</option>
+                        <option value="this-year" {% if filter_period == 'this-year' %}selected{% endif %}>This Year</option>
+                        <option value="custom" {% if filter_period == 'custom' %}selected{% endif %}>Custom Range</option>
+                    </select>
+                </div>
+                <div class="col-md-3 custom-date-range" style="display: none;">
+                    <label for="start-date" class="form-label">Start Date</label>
+                    <input type="date" class="form-control" id="start-date" name="start-date" value="{{ start_date.strftime('%Y-%m-%d') if start_date else '' }}">
+                </div>
+                <div class="col-md-3 custom-date-range" style="display: none;">
+                    <label for="end-date" class="form-label">End Date</label>
+                    <input type="date" class="form-control" id="end-date" name="end-date" value="{{ end_date.strftime('%Y-%m-%d') if end_date else '' }}">
+                </div>
+                <div class="col-md-3 d-flex align-items-end">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-filter"></i> Apply Filter
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     {% if programs_data %}
         <div class="row">
             {% for program_id, program in programs_data.items() %}
@@ -54,6 +85,20 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
 <script>
+    // Function to toggle custom date range inputs
+    function toggleCustomDates(value) {
+        const customDateInputs = document.querySelectorAll('.custom-date-range');
+        customDateInputs.forEach(input => {
+            input.style.display = value === 'custom' ? 'block' : 'none';
+        });
+    }
+
+    // Initialize custom date range visibility
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterPeriod = document.getElementById('filter-period');
+        toggleCustomDates(filterPeriod.value);
+    });
+
     document.addEventListener('DOMContentLoaded', function () {
         const programsData = {{ programs_data | tojson | safe }};
         

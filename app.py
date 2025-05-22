@@ -11,14 +11,89 @@ from datetime import datetime, timedelta
 from werkzeug.security import check_password_hash, generate_password_hash
 import random
 import string
+import json
+import traceback
+from logging.handlers import RotatingFileHandler
+from functools import wraps
+from utils.config_manager import config_manager
 
-logging.basicConfig(filename='app.log', level=logging.ERROR)
+# Create a logger at module level
+logger = logging.getLogger('dms')
+logger.setLevel(logging.ERROR)
 
-app = Flask(__name__)
-app.secret_key = os.environ.get('SECRET_KEY', 'your_secret_key')
+# Initialize SQLAlchemy
+db = SQLAlchemy()
 
-# Initialize CSRF protection
-csrf = CSRFProtect(app)
+# Initialize Flask-Login
+login_manager = LoginManager()
+login_manager.login_view = 'login'
+
+# Absolute path to current directory
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+def create_app():
+    app = Flask(__name__)
+    
+    # Load configuration
+    app.config.from_object(config_manager._config)
+    
+    # Set SQLite database URI
+    app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{os.path.join(basedir, 'dms.db')}"
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    
+    # Set secret key for CSRF protection
+    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'your-secret-key-here')
+    
+    # Create logs directory if it doesn't exist
+    logs_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logs')
+    if not os.path.exists(logs_dir):
+        os.makedirs(logs_dir)
+
+    # Configure logging
+    logging.basicConfig(
+        level=logging.ERROR,
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    )
+
+    # Set up file handler for local logging
+    log_file = os.path.join(logs_dir, 'dms.log')
+    file_handler = RotatingFileHandler(log_file, maxBytes=1024 * 1024, backupCount=10)
+    file_handler.setFormatter(logging.Formatter(
+        '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    ))
+    logger.addHandler(file_handler)
+
+    # Add error handlers
+    @app.errorhandler(404)
+    def not_found_error(error):
+        logger.error(f'Page not found: {request.url}')
+        return render_template('errors/404.html'), 404
+
+    @app.errorhandler(500)
+    def internal_error(error):
+        logger.error(f'Server Error: {error}')
+        db.session.rollback()
+        return render_template('errors/500.html'), 500
+
+    # Initialize extensions
+    db.init_app(app)
+    login_manager.init_app(app)
+    csrf = CSRFProtect(app)
+
+    return app
+
+# Create the application instance
+app = create_app()
+
+# Create all database tables
+with app.app_context():
+    db.create_all()
+
+# Uploads directory
+UPLOAD_FOLDER = 'static/uploads'
+if not os.path.exists(UPLOAD_FOLDER):
+    os.makedirs(UPLOAD_FOLDER)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Add custom date filter
 @app.template_filter('date')
@@ -32,33 +107,54 @@ def format_date(value, format='%Y-%m-%d'):
             return value
     return value.strftime(format)
 
-# Absolute path to current directory
-basedir = os.path.abspath(os.path.dirname(__file__))
-
-# SQLite database file in the same directory
-app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{os.path.join(basedir, 'dms.db')}"
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
-# Initialize SQLAlchemy
-db = SQLAlchemy(app)
-
-# Uploads directory
-UPLOAD_FOLDER = 'static/uploads'
-if not os.path.exists(UPLOAD_FOLDER):
-    os.makedirs(UPLOAD_FOLDER)
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-
-# Flask-Login Setup
-login_manager = LoginManager()
-login_manager.init_app(app)
-login_manager.login_view = 'login'
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
 
 # Database Models
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(120), nullable=False)
-    role = db.Column(db.String(20), nullable=False)
+    role = db.Column(db.String(20), nullable=False, default='user')
+
+    def __repr__(self):
+        return f'<User {self.username}>'
+
+class ProgramDefinition(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100), nullable=False)
+    description = db.Column(db.Text)
+    created_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    created_by = db.Column(db.Integer, db.ForeignKey('user.id'))
+    fields = db.relationship('ProgramField', backref='program', lazy=True, cascade='all, delete-orphan')
+    data = db.relationship('ProgramData', backref='program', lazy=True, cascade='all, delete-orphan')
+
+    def __repr__(self):
+        return f'<Program {self.name}>'
+
+class ProgramField(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    program_id = db.Column(db.Integer, db.ForeignKey('program_definition.id'), nullable=False)
+    field_name = db.Column(db.String(50), nullable=False)
+    field_label = db.Column(db.String(100), nullable=False)
+    field_type = db.Column(db.String(20), nullable=False)
+    is_required = db.Column(db.Boolean, default=False)
+    validation_rules = db.Column(db.Text)
+    order = db.Column(db.Integer, default=0)
+
+    def __repr__(self):
+        return f'<ProgramField {self.field_name}>'
+
+class ProgramData(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    program_id = db.Column(db.Integer, db.ForeignKey('program_definition.id'), nullable=False)
+    data = db.Column(db.JSON, nullable=False)
+    created_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    created_by = db.Column(db.Integer, db.ForeignKey('user.id'))
+
+    def __repr__(self):
+        return f'<ProgramData {self.id}>'
 
 class Children(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -73,6 +169,9 @@ class Children(db.Model):
     status = db.Column(db.String(50), nullable=False)
     photo = db.Column(db.String(200))
 
+    def __repr__(self):
+        return f'<Children {self.name}>'
+
 class EducationSupportIndicators(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     enrolled_in_high_school = db.Column(db.Integer, default=0)
@@ -84,6 +183,9 @@ class EducationSupportIndicators(db.Model):
     supported_with_pocket_money = db.Column(db.Integer, default=0)
     supported_with_tuition = db.Column(db.Integer, default=0)
     date_column = db.Column(db.Date, default=datetime.utcnow)
+
+    def __repr__(self):
+        return f'<EducationSupportIndicators {self.id}>'
 
 class FamilySupportProgramIndicators(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -97,38 +199,33 @@ class FamilySupportProgramIndicators(db.Model):
     legal_support = db.Column(db.Integer, default=0)
     date_column = db.Column(db.Date, default=datetime.utcnow)
 
-class ProgramDefinition(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), nullable=False)
-    description = db.Column(db.Text)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
-    created_by = db.Column(db.Integer, db.ForeignKey('user.id'))
-    fields = db.relationship('ProgramField', backref='program', lazy=True, cascade='all, delete-orphan')
+    def __repr__(self):
+        return f'<FamilySupportProgramIndicators {self.id}>'
 
-class ProgramField(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    program_id = db.Column(db.Integer, db.ForeignKey('program_definition.id'), nullable=False)
-    field_name = db.Column(db.String(100), nullable=False)
-    field_label = db.Column(db.String(100), nullable=False)
-    field_type = db.Column(db.String(50), nullable=False)  # number, text, date, etc.
-    is_required = db.Column(db.Boolean, default=True)
-    order = db.Column(db.Integer, default=0)
-
-class ProgramData(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    program_id = db.Column(db.Integer, db.ForeignKey('program_definition.id'), nullable=False)
-    data = db.Column(db.JSON, nullable=False)  # Stores the actual field values
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
-    created_by = db.Column(db.Integer, db.ForeignKey('user.id'))
-
-@login_manager.user_loader
-def load_user(user_id):
-    return User.query.get(int(user_id))
+def handle_errors(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        try:
+            return f(*args, **kwargs)
+        except Exception as e:
+            error_message = str(e)
+            error_details = traceback.format_exc()
+            
+            # Log the error
+            logger.error(f"Error in {f.__name__}: {error_message}\n{error_details}")
+            
+            # Flash error message to user
+            flash(f'An error occurred: {error_message}', 'danger')
+            
+            # Return appropriate response
+            if request.is_json:
+                return jsonify({'error': error_message}), 500
+            return redirect(url_for('index'))
+    return decorated_function
 
 @app.route('/')
 def index():
     return redirect(url_for('login'))
-
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
@@ -248,7 +345,6 @@ def data_manager():
 
     return render_template('data_manager.html')
 
-
 @app.route('/dashboard', methods=['GET', 'POST'])
 @login_required
 def dashboard():
@@ -365,8 +461,6 @@ def dashboard():
         custom_programs_data=custom_programs_data
     )
 
-
-
 @app.route('/reports', methods=['GET', 'POST'])
 @login_required
 def reports():
@@ -434,7 +528,6 @@ def reports():
                          values=values, 
                          custom_programs=custom_programs,
                          selected_program_id=selected_program_id)
-
 
 @app.route('/add_family_program_data', methods=['GET', 'POST'])
 @login_required
@@ -556,8 +649,6 @@ def edit_child(child_id):
             flash(f'Error updating child record: {e}', 'danger')
 
     return render_template('edit_child.html', child=child)
-
-
 
 @app.route('/delete_child/<int:child_id>', methods=['POST'])
 @login_required
@@ -685,6 +776,7 @@ def list_programs():
 
 @app.route('/programs/new', methods=['GET', 'POST'])
 @login_required
+@handle_errors
 def create_program():
     if current_user.role != 'admin':
         flash('You do not have permission to create programs.', 'danger')
@@ -698,7 +790,7 @@ def create_program():
                 created_by=current_user.id
             )
             db.session.add(program)
-            db.session.flush()  # Get the program ID
+            db.session.flush()
 
             # Process fields
             field_names = request.form.getlist('field_name[]')
@@ -725,7 +817,7 @@ def create_program():
                     field_label=field_labels[i],
                     field_type=field_types[i],
                     is_required=field_required[i] == 'true',
-                    order=i + 1  # Start from 1 since date_column is 0
+                    order=i + 1
                 )
                 db.session.add(field)
 
@@ -734,7 +826,7 @@ def create_program():
             return redirect(url_for('list_programs'))
         except Exception as e:
             db.session.rollback()
-            flash(f'Error creating program: {str(e)}', 'danger')
+            raise e
 
     return render_template('programs/create.html')
 
@@ -788,9 +880,32 @@ def view_program_data(program_id):
     data = ProgramData.query.filter_by(program_id=program_id).order_by(ProgramData.created_at.desc()).all()
     return render_template('programs/view_data.html', program=program, data=data)
 
-@app.route('/programs/dashboard')
+@app.route('/programs/dashboard', methods=['GET', 'POST'])
 @login_required
 def programs_dashboard():
+    # Get filter parameters
+    filter_period = request.form.get('filter-period', 'this-month')
+    start_date = None
+    end_date = None
+
+    today = datetime.today()
+
+    if filter_period == 'this-month':
+        start_date = today.replace(day=1)
+        end_date = today
+    elif filter_period == 'last-3-months':
+        start_date = today - timedelta(days=90)
+        end_date = today
+    elif filter_period == 'this-year':
+        start_date = today.replace(month=1, day=1)
+        end_date = today
+    elif filter_period == 'custom':
+        start_date_str = request.form.get('start-date')
+        end_date_str = request.form.get('end-date')
+        if start_date_str and end_date_str:
+            start_date = datetime.strptime(start_date_str, '%Y-%m-%d')
+            end_date = datetime.strptime(end_date_str, '%Y-%m-%d')
+
     # Get all programs with numeric fields
     programs = ProgramDefinition.query.all()
     programs_data = {}
@@ -798,7 +913,16 @@ def programs_dashboard():
     for program in programs:
         numeric_fields = [field for field in program.fields if field.field_type == 'number']
         if numeric_fields:  # Only include programs with numeric fields
-            data_entries = ProgramData.query.filter_by(program_id=program.id).order_by(ProgramData.created_at).all()
+            # Base query for program data
+            data_query = ProgramData.query.filter_by(program_id=program.id)
+            
+            # Apply date filter if dates are provided
+            if start_date and end_date:
+                data_query = data_query.filter(
+                    ProgramData.data['date_column'].astext.cast(Date).between(start_date.date(), end_date.date())
+                )
+            
+            data_entries = data_query.order_by(ProgramData.created_at).all()
             
             # Prepare data for charts
             chart_data = {}
@@ -807,23 +931,32 @@ def programs_dashboard():
                     'label': field.field_label,
                     'data': []
                 }
+                
                 for entry in data_entries:
-                    value = entry.data.get(field.field_name, 0)
-                    field_data['data'].append({
-                        'date': entry.created_at.strftime('%Y-%m-%d'),
-                        'value': float(value) if value else 0
-                    })
-                chart_data[field.field_name] = field_data
+                    if field.field_name in entry.data:
+                        try:
+                            value = float(entry.data[field.field_name])
+                            field_data['data'].append({
+                                'date': entry.data.get('date_column', entry.created_at.strftime('%Y-%m-%d')),
+                                'value': value
+                            })
+                        except (ValueError, TypeError):
+                            continue
+                
+                if field_data['data']:  # Only include fields with valid data
+                    chart_data[field.field_name] = field_data
             
-            # Only include serializable data
-            programs_data[program.id] = {
-                'name': program.name,
-                'description': program.description,
-                'chart_data': chart_data
-            }
-    
-    return render_template('programs/dashboard.html', 
-                         programs_data=programs_data)
+            if chart_data:  # Only include programs with valid chart data
+                programs_data[program.id] = {
+                    'name': program.name,
+                    'chart_data': chart_data
+                }
+
+    return render_template('programs/dashboard.html',
+                         programs_data=programs_data,
+                         filter_period=filter_period,
+                         start_date=start_date,
+                         end_date=end_date)
 
 @app.route('/programs/<int:program_id>/delete', methods=['POST'])
 @login_required
@@ -936,9 +1069,77 @@ def delete_user(user_id):
         db.session.rollback()
         return jsonify({'success': False, 'message': str(e)})
 
+@app.route('/api/programs', methods=['POST'])
+def create_program_api():
+    try:
+        data = request.get_json()
+        
+        # Validate required fields
+        if not data or 'name' not in data:
+            return jsonify({'error': 'Program name is required'}), 400
+            
+        # Create new program
+        program = ProgramDefinition(
+            name=data['name'],
+            description=data.get('description', '')
+        )
+        db.session.add(program)
+        
+        # Add program fields if provided
+        if 'fields' in data and isinstance(data['fields'], list):
+            for field_data in data['fields']:
+                field = ProgramField(
+                    program=program,
+                    field_name=field_data['field_name'],
+                    field_label=field_data['field_label'],
+                    field_type=field_data['field_type'],
+                    is_required=field_data.get('is_required', True),
+                    validation_rules=json.dumps(field_data.get('validation_rules', {}))
+                )
+                db.session.add(field)
+        
+        db.session.commit()
+        
+        return jsonify({
+            'message': 'Program created successfully',
+            'program_id': program.id
+        }), 201
+        
+    except Exception as e:
+        db.session.rollback()
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/programs/<int:program_id>', methods=['GET'])
+def get_program_api(program_id):
+    program = ProgramDefinition.query.get_or_404(program_id)
+    return jsonify({
+        'id': program.id,
+        'name': program.name,
+        'description': program.description,
+        'created_at': program.created_at.isoformat(),
+        'fields': [{
+            'field_name': field.field_name,
+            'field_label': field.field_label,
+            'field_type': field.field_type,
+            'is_required': field.is_required,
+            'validation_rules': json.loads(field.validation_rules) if field.validation_rules else {}
+        } for field in program.fields]
+    })
+
+@app.route('/api/programs', methods=['GET'])
+def list_programs_api():
+    programs = ProgramDefinition.query.all()
+    return jsonify([{
+        'id': program.id,
+        'name': program.name,
+        'description': program.description,
+        'created_at': program.created_at.isoformat(),
+        'field_count': len(program.fields)
+    } for program in programs])
+
 if __name__ == '__main__':
     with app.app_context():
         # Create all database tables
         db.create_all()
         # Run the application
-        app.run(debug=True, host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+        app.run(debug=True)
