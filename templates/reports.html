@@ -1,0 +1,335 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Reports</h2>
+        <div>
+            <a href="{{ url_for('programs_dashboard') }}" class="btn btn-info">
+                <i class="fas fa-chart-bar"></i> View Dashboard
+            </a>
+        </div>
+    </div>
+    
+    <div class="card mb-4">
+        <div class="card-body">
+            <form method="POST" class="row g-3">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() if csrf_token else '' }}">
+                <div class="col-md-4">
+                    <label for="custom_program_id" class="form-label">Select Program</label>
+                    <select class="form-select" id="custom_program_id" name="custom_program_id" required>
+                        <option value="">Select Program</option>
+                        {% for program in custom_programs %}
+                        <option value="{{ program.id }}" {% if selected_program_id|int == program.id %}selected{% endif %}>
+                            {{ program.name }}
+                        </option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="period" class="form-label">Period</label>
+                    <select class="form-select" id="period" name="period" required>
+                        <option value="this-month">This Month</option>
+                        <option value="last-3-months">Last 3 Months</option>
+                        <option value="this-year">This Year</option>
+                        <option value="custom">Custom Range</option>
+                    </select>
+                </div>
+
+                <div class="col-md-4 custom-date-range" style="display: none;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="start_date" class="form-label">Start Date</label>
+                            <input type="date" class="form-control" id="start_date" name="start_date">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="end_date" class="form-label">End Date</label>
+                            <input type="date" class="form-control" id="end_date" name="end_date">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-chart-line"></i> Generate Report
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    {% if labels and values %}
+    <div class="card">
+        <div class="card-header text-center">
+            <h3 class="card-title mb-0">
+                {% for program in custom_programs %}
+                    {% if program.id|int == selected_program_id|int %}
+                        {{ program.name }} Report
+                    {% endif %}
+                {% endfor %}
+            </h3>
+            <div class="mt-2">
+                <select class="form-select form-select-sm chart-type-selector" style="width: 150px; margin: 0 auto;">
+                    <option value="bar">Bar Chart</option>
+                    <option value="pie">Pie Chart</option>
+                    <option value="doughnut">Doughnut Chart</option>
+                    <option value="line">Line Chart</option>
+                </select>
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="d-flex justify-content-end mb-3">
+                <button id="exportPngBtn" class="btn btn-outline-secondary me-2">
+                    <i class="fas fa-download"></i> Export PNG
+                </button>
+                <button id="printChartBtn" class="btn btn-outline-info">
+                    <i class="fas fa-print"></i> Print Chart
+                </button>
+            </div>
+            <div style="height: 400px;">
+                <canvas id="reportChart"></canvas>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle custom date range visibility
+    const periodSelect = document.getElementById('period');
+    const customDateRange = document.querySelector('.custom-date-range');
+    
+    periodSelect.addEventListener('change', function() {
+        customDateRange.style.display = this.value === 'custom' ? 'block' : 'none';
+    });
+
+    // Initialize chart if data exists
+    {% if labels and values %}
+    const ctx = document.getElementById('reportChart').getContext('2d');
+    
+    // Get program name for chart title
+    let programName = '';
+    {% for program in custom_programs %}
+        {% if program.id|int == selected_program_id|int %}
+            programName = '{{ program.name }}';
+        {% endif %}
+    {% endfor %}
+    
+    // Define color palette
+    const colorPalette = [
+        { bg: 'rgba(0, 123, 255, 0.7)', border: 'rgba(0, 123, 255, 1)' },      // Primary Blue
+        { bg: 'rgba(40, 167, 69, 0.7)', border: 'rgba(40, 167, 69, 1)' },      // Success Green
+        { bg: 'rgba(255, 193, 7, 0.7)', border: 'rgba(255, 193, 7, 1)' },      // Warning Yellow
+        { bg: 'rgba(220, 53, 69, 0.7)', border: 'rgba(220, 53, 69, 1)' },      // Danger Red
+        { bg: 'rgba(23, 162, 184, 0.7)', border: 'rgba(23, 162, 184, 1)' },    // Info Cyan
+        { bg: 'rgba(111, 66, 193, 0.7)', border: 'rgba(111, 66, 193, 1)' },    // Purple
+        { bg: 'rgba(253, 126, 20, 0.7)', border: 'rgba(253, 126, 20, 1)' },    // Orange
+        { bg: 'rgba(102, 16, 242, 0.7)', border: 'rgba(102, 16, 242, 1)' }     // Deep Purple
+    ];
+
+    const backgroundColors = {{ labels|tojson|safe }}.map((_, index) => colorPalette[index % colorPalette.length].bg);
+    const borderColors = {{ labels|tojson|safe }}.map((_, index) => colorPalette[index % colorPalette.length].border);
+
+    const commonOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                display: true,
+                position: 'right'
+            },
+            title: {
+                display: true,
+                text: programName,
+                font: {
+                    size: 16,
+                    weight: 'bold',
+                    family: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"
+                },
+                padding: {
+                    top: 10,
+                    bottom: 20
+                }
+            },
+            tooltip: {
+                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                titleColor: '#fff',
+                bodyColor: '#fff',
+                padding: 10,
+                cornerRadius: 4,
+                callbacks: {
+                    label: function(context) {
+                        const value = context.parsed.y || context.parsed;
+                        return `${context.label}: ${value.toLocaleString()}`;
+                    }
+                }
+            },
+            datalabels: {
+                color: '#000',
+                font: {
+                    weight: 'bold',
+                    size: 12
+                },
+                formatter: value => value.toLocaleString(),
+                textStrokeColor: 'rgba(255, 255, 255, 0.8)',
+                textStrokeWidth: 2
+            }
+        }
+    };
+
+    let chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: {{ labels|tojson|safe }},
+            datasets: [{
+                label: 'Total Values',
+                data: {{ values|tojson|safe }},
+                backgroundColor: backgroundColors,
+                borderColor: borderColors,
+                borderWidth: 1
+            }]
+        },
+        options: {
+            ...commonOptions,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    title: {
+                        display: true,
+                        text: 'Total Value',
+                        font: { 
+                            size: 14, 
+                            weight: 'bold',
+                            family: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"
+                        }
+                    }
+                },
+                x: {
+                    title: {
+                        display: true,
+                        text: 'Indicators',
+                        font: { 
+                            size: 14, 
+                            weight: 'bold',
+                            family: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"
+                        }
+                    }
+                }
+            }
+        },
+        plugins: [ChartDataLabels]
+    });
+
+    // Chart type change handler
+    document.querySelector('.chart-type-selector').addEventListener('change', function() {
+        const chartType = this.value;
+        chart.destroy();
+        
+        const newConfig = {
+            type: chartType,
+            data: {
+                labels: {{ labels|tojson|safe }},
+                datasets: [{
+                    label: 'Total Values',
+                    data: {{ values|tojson|safe }},
+                    backgroundColor: backgroundColors,
+                    borderColor: borderColors,
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                ...commonOptions,
+                ...(chartType === 'bar' ? {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Total Value',
+                                font: { 
+                                    size: 14, 
+                                    weight: 'bold',
+                                    family: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"
+                                }
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Indicators',
+                                font: { 
+                                    size: 14, 
+                                    weight: 'bold',
+                                    family: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif"
+                                }
+                            }
+                        }
+                    }
+                } : {}),
+                ...(chartType === 'line' ? {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                } : {})
+            },
+            plugins: [ChartDataLabels]
+        };
+
+        chart = new Chart(ctx, newConfig);
+    });
+
+    // Export PNG functionality
+    document.getElementById('exportPngBtn').addEventListener('click', function() {
+        const canvas = document.getElementById('reportChart');
+        const tempCanvas = document.createElement('canvas');
+        const ctxTemp = tempCanvas.getContext('2d');
+
+        tempCanvas.width = canvas.width;
+        tempCanvas.height = canvas.height;
+
+        ctxTemp.fillStyle = '#fff';
+        ctxTemp.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
+        ctxTemp.drawImage(canvas, 0, 0);
+
+        const link = document.createElement('a');
+        link.href = tempCanvas.toDataURL('image/png', 1.0);
+        link.download = programName.toLowerCase().replace(/\s+/g, '-') + '-chart.png';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+
+    // Print functionality
+    document.getElementById('printChartBtn').addEventListener('click', function() {
+        window.print();
+    });
+    {% endif %}
+});
+</script>
+
+<style>
+@media print {
+    body * {
+        visibility: hidden;
+    }
+    .card-body, .card-body * {
+        visibility: visible;
+    }
+    .card-body {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    .btn-group {
+        display: none;
+    }
+}
+</style>
+{% endblock %}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>Data Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            padding-top: 60px;
+            /* leave space for fixed navbar */
+        }
+
+        .navbar {
+            background-color: #343a40;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 10px;
+            margin-right: auto;
+            /* aligns to the right */
+        }
+
+        .navbar a,
+        .dropbtn {
+            color: white;
+            text-decoration: none;
+            padding: 6px 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        .navbar a:hover,
+        .dropbtn:hover {
+            background-color: #495057;
+            border-radius: 4px;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #495057;
+            min-width: 180px;
+            right: 0;
+            top: 100%;
+            z-index: 1;
+            border-radius: 4px;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 10px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #6c757d;
+        }
+
+        .dropdown.active .dropdown-content {
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            text-decoration: none;
+            margin-right: 5px;
+            display: inline-block;
+        }
+
+        .btn-view {
+            background-color: #17a2b8;
+            /* Bootstrap info (light blue) */
+            color: white;
+        }
+
+        .btn-edit {
+            background-color: #28a745;
+            /* Bootstrap primary (blue) */
+            color: white;
+        }
+
+        .btn-delete {
+            background-color: #f44336;
+            /* Bootstrap danger (red) */
+            color: white;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        /* Base table style */
+        #childrenTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #childrenTable th,
+        #childrenTable td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Light background on hover */
+        #childrenTable tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        /* Highlight the column on hover */
+        #childrenTable td:hover {
+            background-color: #eef7ff;
+        }
+
+        /* Header row styling */
+        #childrenTable thead tr {
+            background-color: #f2f2f2;
+        }
+
+        #childrenTable td,
+        #childrenTable tr {
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="nav-links">
+            {% if current_user.is_authenticated %}
+            <a href="{{ url_for('data_display') }}">🏠 Home</a>
+
+            <div class="dropdown">
+                <button class="dropbtn">👶 Child Management ▾</button>
+                <div class="dropdown-content">
+                    <a href="{{ url_for('data_entry') }}">Child registration</a>
+                    <a href="{{ url_for('import_csv') }}">Import CSV</a>
+                    <a href="{{ url_for('data_display') }}">Child Data display</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropbtn">📊 Indicator Management ▾</button>
+                <div class="dropdown-content">
+                    <a href="{{ url_for('list_programs') }}">View Programs</a>
+                    <a href="{{ url_for('create_program') }}">Register Programs</a>
+                    <div class="dropdown-divider" style="border-top: 1px solid #6c757d; margin: 5px 0;"></div>
+                    <a href="{{ url_for('programs_dashboard') }}">📊 Programs Dashboard</a>
+                    <a href="{{ url_for('reports') }}">📈 Reports</a>
+                </div>
+            </div>
+
+            {% if current_user.role == 'admin' %}
+            <a href="{{ url_for('user_management') }}">👥 User Management</a>
+            {% endif %}
+
+            <a href="{{ url_for('help') }}">❓ Help</a>
+            <a href="{{ url_for('logout') }}">🚪 Logout</a>
+            {% else %}
+            <a href="{{ url_for('login') }}">🔐 Login</a>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        {% for category, message in messages %}
+        <div class="alert alert-{{ category }}">{{ message }}</div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Data Management System</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll(".dropbtn").forEach(button => {
+            button.addEventListener("click", function () {
+                // Close other dropdowns
+                document.querySelectorAll(".dropdown").forEach(drop => {
+                    if (drop !== button.parentElement) drop.classList.remove("active");
+                });
+
+                // Toggle this one
+                button.parentElement.classList.toggle("active");
+            });
+        });
+
+        // Optional: close dropdown if clicked outside
+        window.addEventListener("click", function (e) {
+            document.querySelectorAll(".dropdown").forEach(drop => {
+                if (!drop.contains(e.target)) drop.classList.remove("active");
+            });
+        });
+    </script>
+    {% block scripts %}{% endblock %}
+</body>
+
+</html>

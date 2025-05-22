@@ -1,0 +1,128 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Children's Data</h2>
+
+<!-- 🔍 Search + Controls Container -->
+<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 20px;">
+    <!-- Search Input -->
+    <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="🔍 Search by name..." 
+        style="padding: 10px; width: 300px; border-radius: 5px; border: 1px solid #ccc;"
+    >
+
+    <!-- Controls: Column Selection + Print -->
+    <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+        <div>
+            <strong>Select Columns:</strong><br>
+            <label><input type="checkbox" class="col-toggle" data-col="1" checked> Name</label>
+            <label><input type="checkbox" class="col-toggle" data-col="2" checked> DOB</label>
+            <label><input type="checkbox" class="col-toggle" data-col="3" checked> Gender</label>
+            <label><input type="checkbox" class="col-toggle" data-col="4" checked> Guardian</label>
+            <label><input type="checkbox" class="col-toggle" data-col="5" checked> Contact</label>
+            <label><input type="checkbox" class="col-toggle" data-col="6" checked> Status</label>
+            <label><input type="checkbox" class="col-toggle" data-col="7" checked> Actions</label>
+        </div>
+
+        <button onclick="printTable()" style="padding: 8px 15px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">
+            🖨️ Print
+        </button>
+    </div>
+</div>
+
+<!-- 📋 Table -->
+<table id="childrenTable" style="width: 100%; border-collapse: collapse;">
+    <thead>
+        <tr style="background-color: #f2f2f2;">
+            <th>Name</th>
+            <th>Date of Birth</th>
+            <th>Gender</th>
+            <th>Guardian Name</th>
+            <th>Guardian Contact</th>
+            <th>Status</th>
+            <th class="no-print">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for child in children %}
+        <tr>
+            <td class="child-name">{{ child.name }}</td>
+            <td>{{ child.date_of_birth }}</td>
+            <td>{{ child.gender }}</td>
+            <td>{{ child.guardian_name }}</td>
+            <td>{{ child.guardian_contact }}</td>
+            <td>{{ child.status }}</td>
+            <td class="no-print">
+                <a href="{{ url_for('child_detail', child_id=child.id) }}" class="btn btn-view">View</a>
+                {% if current_user.role == 'admin' %}
+                <a href="{{ url_for('edit_child', child_id=child.id) }}" class="btn btn-edit">Edit</a>
+                <form action="{{ url_for('delete_child', child_id=child.id) }}" method="POST" style="display:inline;">
+                    <button type="submit" onclick="return confirm('Are you sure you want to delete this record?')" 
+                            class="btn btn-delete" 
+                            style="border: none; cursor: pointer;">Delete</button>
+                </form>
+                {% endif %}
+            </td>
+        </tr>
+        {% else %}
+        <tr>
+            <td colspan="7" style="text-align: center;">No records found.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!-- JS -->
+<script>
+    // 🔍 Live Search
+    const searchInput = document.getElementById('searchInput');
+    const tableRows = document.querySelectorAll('#childrenTable tbody tr');
+
+    searchInput.addEventListener('input', function () {
+        const query = this.value.toLowerCase();
+        tableRows.forEach(row => {
+            const nameCell = row.querySelector('.child-name');
+            const name = nameCell ? nameCell.textContent.toLowerCase() : '';
+            row.style.display = name.includes(query) ? '' : 'none';
+        });
+    });
+
+    // 📊 Column Toggle
+    const toggles = document.querySelectorAll('.col-toggle');
+    toggles.forEach(toggle => {
+        toggle.addEventListener('change', function() {
+            const col = this.dataset.col;
+            const cells = document.querySelectorAll(`td:nth-child(${col}), th:nth-child(${col})`);
+            cells.forEach(cell => {
+                cell.style.display = this.checked ? '' : 'none';
+            });
+        });
+    });
+
+    // 🖨️ Print Function
+    function printTable() {
+        const printWindow = window.open('', '', 'width=800,height=600');
+        printWindow.document.write('<html><head><title>Print</title>');
+        printWindow.document.write('<style>');
+        printWindow.document.write(`
+            table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            .no-print { display: none; }
+            @media print {
+                .no-print { display: none; }
+            }
+        `);
+        printWindow.document.write('</style></head><body>');
+        printWindow.document.write('<h2>Children\'s Data</h2>');
+        printWindow.document.write(document.getElementById('childrenTable').outerHTML);
+        printWindow.document.write('</body></html>');
+        printWindow.document.close();
+        printWindow.focus();
+        printWindow.print();
+        printWindow.close();
+    }
+</script>
+{% endblock %}

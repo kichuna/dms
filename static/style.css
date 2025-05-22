@@ -1,0 +1,588 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    padding: 1em;
+}
+
+nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+.container {
+    margin: 2em;
+    padding: 1em;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced Table Styles */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 1.5em 0;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+}
+
+tr:hover {
+    background-color: #f5f8ff;
+    transition: background-color 0.2s ease;
+}
+
+td {
+    color: #444;
+    font-size: 0.95em;
+}
+
+/* Style for action buttons in table */
+td .btn {
+    padding: 6px 12px;
+    margin: 0 4px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+}
+
+td .btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+}
+
+/* Style for View button */
+td .btn-view {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Style for Edit button */
+td .btn-edit {
+    background-color: #2196F3;
+    color: white;
+}
+
+/* Style for Delete button */
+td .btn-delete {
+    background-color: #f44336;
+    color: white;
+    font-family: inherit;
+}
+
+/* Responsive table */
+@media screen and (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    th, td {
+        padding: 10px 12px;
+    }
+    
+    td .btn {
+        padding: 4px 8px;
+        margin: 0 2px;
+    }
+}
+
+.alert {
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.data-entry-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;  /* Reduced padding to avoid stretching */
+}
+
+.data-entry-form {
+    background-color: white;
+    padding: 1.5em; /* Reduced padding for optimal spacing */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;  /* Reduced width for better fit on screens */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.data-entry-form h2 {
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1.2em;  /* Reduced bottom margin to optimize spacing */
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75em;  /* Slightly increased padding for input fields */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 0.75em;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 1.5em;  /* Added top margin for spacing between form and button */
+}
+
+.submit-button:hover {
+    background-color: #434190;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f4f4f4;
+}
+
+.login-form {
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.login-form h2 {
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-button {
+    width: 100%;
+    padding: 0.75em;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.login-button:hover {
+    background-color: #434190;
+}
+
+table img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.detail-container {
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2em auto;
+    text-align: left;
+    page-break-after: always;
+}
+
+.detail-header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.detail-header h3 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.detail-header p {
+    margin: 0.5em 0 0 0;
+    font-size: 1em;
+    color: #555;
+}
+
+.detail-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.detail-item {
+    flex: 1 1 45%;
+    box-sizing: border-box;
+}
+
+.detail-item label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.photo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.photo-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.back-button, .print-button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.75em 1.5em;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.back-button:hover, .print-button:hover {
+    background-color: #434190;
+}
+
+.print-button {
+    background-color: #28a745;
+}
+
+.print-button:hover {
+    background-color: #218838;
+}
+
+/* New CSS for responsiveness and form layout */
+.data-entry-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5em;
+    box-sizing: border-box;
+}
+
+.data-entry-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.data-entry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.submit-button {
+    align-self: flex-start;
+}
+/* Dropdown styles for Program Management menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown .dropbtn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 15px;
+    text-align: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.card p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+/* Container for each chart */
+.chart-container {
+    width: 48%;                          /* Each chart container takes 48% width */
+    max-width: 550px;                    /* Max width for larger screens */
+    min-width: 300px;                    /* Min width for smaller screens */
+    padding: 15px;                       /* Padding inside each chart container */
+    border: 1px solid #ddd;              /* Border around each chart */
+    border-radius: 8px;                  /* Rounded corners for charts */
+    background-color: #f9f9f9;           /* Light background */
+    box-sizing: border-box;              /* Ensure padding doesn't affect width */
+}
+
+.chart-container canvas {
+    width: 100% !important;              /* Canvas takes full container width */
+    height: 400px !important;            /* Set a fixed height for the canvas */
+    display: block;                      /* Block display for canvas */
+    margin: 0 auto;                      /* Center canvas inside the container */
+}
+
+/* Responsive Navigation */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 15px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    /* Improve mobile navigation */
+    nav {
+        padding: 0.5em;
+    }
+
+    nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    /* Make dropdown more mobile-friendly */
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
+/* Improve form responsiveness */
+@media screen and (max-width: 576px) {
+    .data-entry-form {
+        padding: 1em;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.5em;
+    }
+
+    /* Make buttons more touch-friendly */
+    .submit-button,
+    .login-button,
+    td .btn {
+        padding: 12px 16px;
+        min-height: 44px; /* Minimum touch target size */
+    }
+
+    /* Improve table responsiveness */
+    table {
+        display: block;
+    }
+
+    th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Hide table headers on mobile */
+    thead {
+        display: none;
+    }
+
+    /* Make table cells look like cards */
+    td {
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+        border-bottom: 1px solid #eee;
+    }
+
+    td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 12px;
+        width: 45%;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    /* Improve chart responsiveness */
+    .chart-container {
+        width: 100%;
+        min-width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Improve detail view responsiveness */
+@media screen and (max-width: 576px) {
+    .detail-container {
+        padding: 1em;
+        margin: 1em;
+    }
+
+    .detail-item {
+        flex: 1 1 100%;
+    }
+
+    .photo-container img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+canvas {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    background: #fafafa;
+    border: none;
+}
+
+.card-header, .card-footer {
+    background-color: #f0f2f5;
+    font-weight: 600;
+    color: #333;
+}
+

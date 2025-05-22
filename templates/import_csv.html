@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Import Children Data</h2>
+    
+    <div class="card mb-4">
+        <div class="card-header">
+            CSV File Format Instructions
+        </div>
+        <div class="card-body">
+            <h5>Your CSV file should have the following columns in order:</h5>
+            <ol>
+                <li>Name</li>
+                <li>Date of Birth (Accepted formats: YYYY-MM-DD, M/D/YYYY, D/M/YYYY)</li>
+                <li>Gender</li>
+                <li>Guardian Name</li>
+                <li>Guardian Contact</li>
+                <li>Address</li>
+                <li>Date of Admission (Accepted formats: YYYY-MM-DD, M/D/YYYY, D/M/YYYY)</li>
+                <li>Nature of Case</li>
+                <li>Status</li>
+            </ol>
+            <h5>Example:</h5>
+            <pre>name,date_of_birth,gender,guardian_name,guardian_contact,address,date_of_admission,nature_of_case,status
+John Doe,2010-05-15,Male,Jane Doe,1234567890,123 Main St,2023-01-01,Case description,Active</pre>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <form method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() if csrf_token else '' }}">
+                <div class="mb-3">
+                    <label for="csv_file" class="form-label">Select CSV File</label>
+                    <input type="file" class="form-control" id="csv_file" name="csv_file" accept=".csv" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Import Data</button>
+            </form>
+        </div>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }} mt-3">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</div>
+{% endblock %}

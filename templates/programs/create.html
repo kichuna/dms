@@ -1,0 +1,272 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <!-- Enhanced Header Section -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="mb-1">Create New Program</h2>
+            <p class="text-muted">Define a new program and its data collection fields</p>
+        </div>
+        <div>
+            <a href="{{ url_for('list_programs') }}" class="btn btn-outline-secondary">
+                <i class="fas fa-arrow-left"></i> Back to Programs
+            </a>
+        </div>
+    </div>
+    
+    <div class="row">
+        <!-- Main Form Section -->
+        <div class="col-lg-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <form method="POST" id="programForm" class="needs-validation" novalidate>
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() if csrf_token else '' }}">
+                        
+                        <!-- Program Details Section -->
+                        <div class="mb-4">
+                            <h4 class="card-title mb-3">Program Details</h4>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Program Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required
+                                       placeholder="Enter a descriptive program name">
+                                <div class="form-text">Choose a clear, descriptive name for your program</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="description" class="form-label">Description</label>
+                                <textarea class="form-control" id="description" name="description" rows="3"
+                                          placeholder="Provide a detailed description of the program"></textarea>
+                                <div class="form-text">Describe the purpose and scope of this program</div>
+                            </div>
+                        </div>
+
+                        <!-- Program Fields Section -->
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h4 class="card-title mb-0">Program Fields</h4>
+                            </div>
+                            <div id="fieldsContainer">
+                                <!-- Field templates will be added here -->
+                            </div>
+                        </div>
+
+                        <!-- Form Actions -->
+                        <div class="d-flex justify-content-between align-items-center mt-4">
+                            <button type="button" class="btn btn-outline-secondary" onclick="previewProgram()">
+                                <i class="fas fa-eye"></i> Preview
+                            </button>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn btn-primary" onclick="addField()">
+                                    <i class="fas fa-plus"></i> Add Field
+                                </button>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-save"></i> Create Program
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Help Section -->
+        <div class="col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Tips & Guidelines</h5>
+                    <div class="tips-container">
+                        <div class="tip-item mb-3">
+                            <i class="fas fa-info-circle text-primary"></i>
+                            <span>Use clear, descriptive field names</span>
+                        </div>
+                        <div class="tip-item mb-3">
+                            <i class="fas fa-info-circle text-primary"></i>
+                            <span>Choose appropriate field types for your data</span>
+                        </div>
+                        <div class="tip-item mb-3">
+                            <i class="fas fa-info-circle text-primary"></i>
+                            <span>Mark fields as required only when necessary</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Field Template -->
+<template id="fieldTemplate">
+    <div class="field-group mb-3 p-3 border rounded bg-light">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="mb-0">Field Configuration</h5>
+            <button type="button" class="btn btn-outline-danger btn-sm" onclick="removeField(this)">
+                <i class="fas fa-trash"></i>
+            </button>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label">Field Name</label>
+                <input type="text" class="form-control" name="field_name[]" required
+                       placeholder="e.g., student_count" pattern="[a-z0-9_]+"
+                       title="Use only lowercase letters, numbers, and underscores">
+                <div class="form-text">Use lowercase with underscores</div>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Field Label</label>
+                <input type="text" class="form-control" name="field_label[]" required
+                       placeholder="e.g., Number of Students">
+                <div class="form-text">Display name for the field</div>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Field Type</label>
+                <select class="form-select" name="field_type[]" required onchange="updateFieldValidation(this)">
+                    <option value="text">Text</option>
+                    <option value="number">Number</option>
+                    <option value="date">Date</option>
+                    <option value="textarea">Long Text</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <div class="form-check mt-4">
+                    <input type="checkbox" class="form-check-input" name="field_required[]" value="true" checked>
+                    <label class="form-check-label">Required Field</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- Preview Modal -->
+<div class="modal fade" id="previewModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Program Preview</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="previewContent"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.tips-container {
+    font-size: 0.9rem;
+}
+.tip-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.field-group {
+    transition: all 0.3s ease;
+}
+.field-group:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+</style>
+
+<script>
+function addField() {
+    const template = document.getElementById('fieldTemplate');
+    const container = document.getElementById('fieldsContainer');
+    const clone = template.content.cloneNode(true);
+    container.appendChild(clone);
+    
+    // Initialize tooltips for the new field
+    const tooltips = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltips.map(function (tooltip) {
+        return new bootstrap.Tooltip(tooltip);
+    });
+}
+
+function removeField(button) {
+    const fieldGroup = button.closest('.field-group');
+    fieldGroup.style.opacity = '0';
+    setTimeout(() => fieldGroup.remove(), 300);
+}
+
+function updateFieldValidation(select) {
+    const fieldGroup = select.closest('.field-group');
+    const nameInput = fieldGroup.querySelector('input[name="field_name[]"]');
+    
+    if (select.value === 'number') {
+        nameInput.pattern = '[a-z0-9_]+';
+        nameInput.title = 'Use only lowercase letters, numbers, and underscores';
+    } else {
+        nameInput.pattern = '[a-z0-9_]+';
+        nameInput.title = 'Use only lowercase letters, numbers, and underscores';
+    }
+}
+
+function previewProgram() {
+    const form = document.getElementById('programForm');
+    const previewContent = document.getElementById('previewContent');
+    const programName = form.querySelector('#name').value;
+    const description = form.querySelector('#description').value;
+    
+    let previewHtml = `
+        <div class="preview-section mb-4">
+            <h4>${programName || 'Program Name'}</h4>
+            <p class="text-muted">${description || 'Program description'}</p>
+        </div>
+        <div class="preview-fields">
+    `;
+    
+    const fields = form.querySelectorAll('.field-group');
+    fields.forEach(field => {
+        const fieldName = field.querySelector('input[name="field_name[]"]').value;
+        const fieldLabel = field.querySelector('input[name="field_label[]"]').value;
+        const fieldType = field.querySelector('select[name="field_type[]"]').value;
+        const isRequired = field.querySelector('input[name="field_required[]"]').checked;
+        
+        previewHtml += `
+            <div class="mb-3">
+                <label class="form-label">${fieldLabel || 'Field Label'} ${isRequired ? '<span class="text-danger">*</span>' : ''}</label>
+                ${getPreviewInput(fieldType)}
+            </div>
+        `;
+    });
+    
+    previewHtml += '</div>';
+    previewContent.innerHTML = previewHtml;
+    
+    const previewModal = new bootstrap.Modal(document.getElementById('previewModal'));
+    previewModal.show();
+}
+
+function getPreviewInput(type) {
+    switch(type) {
+        case 'text':
+            return '<input type="text" class="form-control" disabled>';
+        case 'number':
+            return '<input type="number" class="form-control" disabled>';
+        case 'date':
+            return '<input type="date" class="form-control" disabled>';
+        case 'textarea':
+            return '<textarea class="form-control" rows="3" disabled></textarea>';
+        default:
+            return '<input type="text" class="form-control" disabled>';
+    }
+}
+
+// Form validation
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('programForm');
+    
+    form.addEventListener('submit', function(event) {
+        if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+    });
+    
+    // Add first field on page load
+    addField();
+});
+</script>
+{% endblock %} 

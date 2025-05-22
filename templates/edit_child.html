@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    .form-container {
+        max-width: 700px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select,
+    input[type="file"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+    }
+
+    .current-photo {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .current-photo img {
+        width: 100px;
+        height: auto;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+    }
+
+    .form-actions {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .form-actions button {
+        padding: 10px 25px;
+        font-size: 16px;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .form-actions button:hover {
+        background-color: #0056b3;
+    }
+
+    .back-link {
+        display: inline-block;
+        margin-top: 15px;
+        text-align: center;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<div class="form-container">
+    <h2>Edit Child Record</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() if csrf_token else '' }}">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" name="name" value="{{ child.name }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="date_of_birth">Date of Birth</label>
+            <input type="date" name="date_of_birth" value="{{ child.date_of_birth.strftime('%Y-%m-%d') if child.dob else '' }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <select name="gender" required>
+                <option value="Male" {% if child.gender == 'Male' %}selected{% endif %}>Male</option>
+                <option value="Female" {% if child.gender == 'Female' %}selected{% endif %}>Female</option>
+                <option value="Other" {% if child.gender == 'Other' %}selected{% endif %}>Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="guardian_name">Guardian Name</label>
+            <input type="text" name="guardian_name" value="{{ child.guardian_name }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="guardian_contact">Guardian Contact</label>
+            <input type="text" name="guardian_contact" value="{{ child.guardian_contact }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" name="address" value="{{ child.address }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="date_of_admission">Date of Admission</label>
+            <input type="date" name="date_of_admission" value="{{ child.date_of_admission.strftime('%Y-%m-%d') if child.date_of_admission else '' }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="nature_of_case">Nature of Case</label>
+            <input type="text" name="nature_of_case" value="{{ child.nature_of_case }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="status">Status</label>
+            <input type="text" name="status" value="{{ child.status }}" required>
+        </div>
+
+        <div class="form-group">
+            <label for="photo">Upload New Photo (optional)</label>
+            <input type="file" name="photo">
+        </div>
+
+        {% if child.photo %}
+        <div class="current-photo">
+            <label>Current Photo:</label>
+            <img src="{{ url_for('static', filename='uploads/' ~ child.photo) }}" alt="{{ child.full_name }}'s photo">
+        </div>
+        {% endif %}
+
+        <div class="form-actions">
+            <button type="submit">Save Changes</button>
+        </div>
+
+        <div class="form-actions">
+            <a href="{{ url_for('data_display') }}" class="back-link">← Back to Data Display</a>
+        </div>
+    </form>
+</div>
+{% endblock %}
