@@ -43,42 +43,56 @@
     </div>
 
     {% if programs_data %}
-        <div class="row">
-            {% for program_id, program in programs_data.items() %}
-            <div class="col-md-6 mb-4">
-                <div class="card h-100">
-                    <div class="card-header text-center">
-                        <h3 class="card-title mb-0">{{ program.name }}</h3>
-                        <div class="mt-2">
-                            <select class="form-select form-select-sm chart-type-selector" data-program-id="{{ program_id }}" style="width: 150px; margin: 0 auto;">
-                                <option value="bar">Bar Chart</option>
-                                <option value="pie">Pie Chart</option>
-                                <option value="doughnut">Doughnut Chart</option>
-                                <option value="line">Line Chart</option>
-                            </select>
-                        </div>
+    <div class="row">
+        {% for program_id, program in programs_data.items() %}
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-header text-center">
+                    <h3 class="card-title mb-0">{{ program.name }}</h3>
+                    <div class="mt-2">
+                        <select class="form-select form-select-sm chart-type-selector" data-program-id="{{ program_id }}" style="width: 150px; margin: 0 auto;">
+                            <option value="bar">Bar Chart</option>
+                            <option value="pie">Pie Chart</option>
+                            <option value="doughnut">Doughnut Chart</option>
+                            <option value="line">Line Chart</option>
+                        </select>
                     </div>
-                    <div class="card-body">
-                        <canvas id="chart_{{ program_id }}" height="300"></canvas>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container" style="position: relative; height: 300px; width: 100%;">
+                        <canvas id="chart_{{ program_id }}"></canvas>
                     </div>
-                    <div class="card-footer">
+                    <!-- Pagination Controls -->
+                    <div class="d-flex justify-content-between align-items-center mt-3">
                         <div class="btn-group">
-                            <a href="{{ url_for('view_program_data', program_id=program_id) }}" class="btn btn-info">
-                                <i class="fas fa-table"></i> View Data
-                            </a>
-                            <a href="{{ url_for('add_program_data', program_id=program_id) }}" class="btn btn-success">
-                                <i class="fas fa-plus"></i> Add Data
-                            </a>
+                            <button class="btn btn-sm btn-outline-secondary prev-page" data-program-id="{{ program_id }}">
+                                <i class="fas fa-chevron-left"></i> Previous
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary next-page" data-program-id="{{ program_id }}">
+                                Next <i class="fas fa-chevron-right"></i>
+                            </button>
                         </div>
+                        <span class="page-info" data-program-id="{{ program_id }}">Page 1</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="btn-group">
+                        <a href="{{ url_for('view_program_data', program_id=program_id) }}" class="btn btn-info">
+                            <i class="fas fa-table"></i> View Data
+                        </a>
+                        <a href="{{ url_for('add_program_data', program_id=program_id) }}" class="btn btn-success">
+                            <i class="fas fa-plus"></i> Add Data
+                        </a>
                     </div>
                 </div>
             </div>
-            {% endfor %}
         </div>
+        {% endfor %}
+    </div>
     {% else %}
-        <div class="alert alert-info">
-            No programs with numeric data found. Create a program and add numeric fields to see charts.
-        </div>
+    <div class="alert alert-info">
+        No programs with numeric data found. Create a program and add numeric fields to see charts.
+    </div>
     {% endif %}
 </div>
 
@@ -101,6 +115,7 @@
 
     document.addEventListener('DOMContentLoaded', function () {
         const programsData = {{ programs_data | tojson | safe }};
+        const ITEMS_PER_PAGE = 5; // Number of indicators to show per page
         
         // Define a color palette
         const colorPalette = [
@@ -115,13 +130,37 @@
         ];
 
         const charts = {};
+        const paginationState = {};
     
-        function createChart(programId, program, chartType = 'bar') {
+        function createChart(programId, program, chartType = 'bar', page = 1) {
             const ctx = document.getElementById('chart_' + programId).getContext('2d');
-            const labels = Object.keys(program.chart_data).map(fieldName => program.chart_data[fieldName].label);
-            const summedValues = Object.values(program.chart_data).map(data =>
+            const allLabels = Object.keys(program.chart_data).map(fieldName => program.chart_data[fieldName].label);
+            const allValues = Object.values(program.chart_data).map(data =>
                 data.data.reduce((sum, entry) => sum + entry.value, 0)
             );
+
+            // Calculate pagination
+            const startIndex = (page - 1) * ITEMS_PER_PAGE;
+            const endIndex = startIndex + ITEMS_PER_PAGE;
+            const labels = allLabels.slice(startIndex, endIndex);
+            const values = allValues.slice(startIndex, endIndex);
+
+            // Update pagination state
+            paginationState[programId] = {
+                currentPage: page,
+                totalPages: Math.ceil(allLabels.length / ITEMS_PER_PAGE),
+                totalItems: allLabels.length
+            };
+
+            // Update page info
+            const pageInfo = document.querySelector(`.page-info[data-program-id="${programId}"]`);
+            pageInfo.textContent = `Page ${page} of ${paginationState[programId].totalPages}`;
+
+            // Update pagination buttons
+            const prevButton = document.querySelector(`.prev-page[data-program-id="${programId}"]`);
+            const nextButton = document.querySelector(`.next-page[data-program-id="${programId}"]`);
+            prevButton.disabled = page === 1;
+            nextButton.disabled = page === paginationState[programId].totalPages;
 
             const backgroundColors = labels.map((_, index) => colorPalette[index % colorPalette.length].bg);
             const borderColors = labels.map((_, index) => colorPalette[index % colorPalette.length].border);
@@ -132,7 +171,11 @@
                 plugins: {
                     legend: {
                         display: chartType !== 'bar',
-                        position: 'right'
+                        position: 'right',
+                        labels: {
+                            boxWidth: 20,
+                            padding: 10
+                        }
                     },
                     title: {
                         display: true,
@@ -179,7 +222,7 @@
                     labels: labels,
                     datasets: [{
                         label: 'Total Values',
-                        data: summedValues,
+                        data: values,
                         backgroundColor: backgroundColors,
                         borderColor: borderColors,
                         borderWidth: 1
@@ -240,7 +283,25 @@
             // Add chart type change handler
             const selector = document.querySelector(`.chart-type-selector[data-program-id="${programId}"]`);
             selector.addEventListener('change', function() {
-                createChart(programId, program, this.value);
+                createChart(programId, program, this.value, paginationState[programId].currentPage);
+            });
+
+            // Add pagination handlers
+            const prevButton = document.querySelector(`.prev-page[data-program-id="${programId}"]`);
+            const nextButton = document.querySelector(`.next-page[data-program-id="${programId}"]`);
+
+            prevButton.addEventListener('click', function() {
+                const currentPage = paginationState[programId].currentPage;
+                if (currentPage > 1) {
+                    createChart(programId, program, selector.value, currentPage - 1);
+                }
+            });
+
+            nextButton.addEventListener('click', function() {
+                const currentPage = paginationState[programId].currentPage;
+                if (currentPage < paginationState[programId].totalPages) {
+                    createChart(programId, program, selector.value, currentPage + 1);
+                }
             });
         }
 
