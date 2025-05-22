@@ -16,6 +16,7 @@ import traceback
 from logging.handlers import RotatingFileHandler
 from functools import wraps
 from utils.config_manager import config_manager
+from math import ceil
 
 # Create a logger at module level
 logger = logging.getLogger('dms')
@@ -916,13 +917,27 @@ def programs_dashboard():
             # Base query for program data
             data_query = ProgramData.query.filter_by(program_id=program.id)
             
-            # Apply date filter if dates are provided
-            if start_date and end_date:
-                data_query = data_query.filter(
-                    ProgramData.data['date_column'].astext.cast(Date).between(start_date.date(), end_date.date())
-                )
-            
+            # Get all data entries
             data_entries = data_query.order_by(ProgramData.created_at).all()
+            
+            # Filter data by date range if dates are provided
+            if start_date and end_date:
+                filtered_entries = []
+                for entry in data_entries:
+                    entry_date = None
+                    # Try to get date from date_column in data JSON
+                    if 'date_column' in entry.data:
+                        try:
+                            entry_date = datetime.strptime(entry.data['date_column'], '%Y-%m-%d')
+                        except (ValueError, TypeError):
+                            pass
+                    # Fallback to created_at if date_column is not valid
+                    if not entry_date:
+                        entry_date = entry.created_at
+                    
+                    if start_date.date() <= entry_date.date() <= end_date.date():
+                        filtered_entries.append(entry)
+                data_entries = filtered_entries
             
             # Prepare data for charts
             chart_data = {}
@@ -952,11 +967,22 @@ def programs_dashboard():
                     'chart_data': chart_data
                 }
 
+    # Pagination for programs
+    page = int(request.args.get('page', 1))
+    per_page = 2  # Show 2 programs per page
+    program_ids = list(programs_data.keys())
+    total_pages = ceil(len(program_ids) / per_page)
+    start = (page - 1) * per_page
+    end = start + per_page
+    paginated_programs = {pid: programs_data[pid] for pid in program_ids[start:end]}
+
     return render_template('programs/dashboard.html',
-                         programs_data=programs_data,
+                         programs_data=paginated_programs,
                          filter_period=filter_period,
                          start_date=start_date,
-                         end_date=end_date)
+                         end_date=end_date,
+                         page=page,
+                         total_pages=total_pages)
 
 @app.route('/programs/<int:program_id>/delete', methods=['POST'])
 @login_required
