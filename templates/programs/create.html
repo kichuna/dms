@@ -2,6 +2,7 @@
 
 {% block content %}
 <div class="container mt-4">
+<<<<<<< HEAD
     <!-- Enhanced Header Section -->
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
@@ -91,10 +92,43 @@
                     </div>
                 </div>
             </div>
+=======
+    <h2>Create New Program</h2>
+    
+    <div class="card">
+        <div class="card-body">
+            <form method="POST" id="programForm">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() if csrf_token else '' }}">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Program Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="description" class="form-label">Description</label>
+                    <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+                </div>
+
+                <h4 class="mt-4">Program Fields</h4>
+                <div id="fieldsContainer">
+                    <!-- Field templates will be added here -->
+                </div>
+
+                <button type="button" class="btn btn-secondary mt-3" onclick="addField()">
+                    <i class="fas fa-plus"></i> Add Field
+                </button>
+
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-primary">Create Program</button>
+                    <a href="{{ url_for('list_programs') }}" class="btn btn-secondary">Cancel</a>
+                </div>
+            </form>
+>>>>>>> 827b1c1761b57430f89eb639e9d02487877e0ec8
         </div>
     </div>
 </div>
 
+<<<<<<< HEAD
 <!-- Field Template -->
 <template id="fieldTemplate">
     <div class="field-group mb-3 p-3 border rounded bg-light">
@@ -121,13 +155,43 @@
             <div class="col-md-6">
                 <label class="form-label">Field Type</label>
                 <select class="form-select" name="field_type[]" required onchange="updateFieldValidation(this)">
+=======
+<template id="fieldTemplate">
+    <div class="field-group mb-3 p-3 border rounded">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <h5 class="mb-0">Field</h5>
+            <button type="button" class="btn btn-danger btn-sm" onclick="removeField(this)">
+                <i class="fas fa-trash"></i>
+            </button>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-2">
+                <label class="form-label">Field Name</label>
+                <input type="text" class="form-control" name="field_name[]" required
+                       placeholder="e.g., student_count">
+            </div>
+            <div class="col-md-6 mb-2">
+                <label class="form-label">Field Label</label>
+                <input type="text" class="form-control" name="field_label[]" required
+                       placeholder="e.g., Number of Students">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-2">
+                <label class="form-label">Field Type</label>
+                <select class="form-select" name="field_type[]" required>
+>>>>>>> 827b1c1761b57430f89eb639e9d02487877e0ec8
                     <option value="text">Text</option>
                     <option value="number">Number</option>
                     <option value="date">Date</option>
                     <option value="textarea">Long Text</option>
                 </select>
             </div>
+<<<<<<< HEAD
             <div class="col-md-6">
+=======
+            <div class="col-md-6 mb-2">
+>>>>>>> 827b1c1761b57430f89eb639e9d02487877e0ec8
                 <div class="form-check mt-4">
                     <input type="checkbox" class="form-check-input" name="field_required[]" value="true" checked>
                     <label class="form-check-label">Required Field</label>
@@ -137,6 +201,7 @@
     </div>
 </template>
 
+<<<<<<< HEAD
 <!-- Preview Modal -->
 <div class="modal fade" id="previewModal" tabindex="-1">
     <div class="modal-dialog modal-lg">
@@ -169,12 +234,15 @@
 }
 </style>
 
+=======
+>>>>>>> 827b1c1761b57430f89eb639e9d02487877e0ec8
 <script>
 function addField() {
     const template = document.getElementById('fieldTemplate');
     const container = document.getElementById('fieldsContainer');
     const clone = template.content.cloneNode(true);
     container.appendChild(clone);
+<<<<<<< HEAD
     
     // Initialize tooltips for the new field
     const tooltips = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
@@ -268,5 +336,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add first field on page load
     addField();
 });
+=======
+}
+
+function removeField(button) {
+    button.closest('.field-group').remove();
+}
+
+// Add first field on page load
+document.addEventListener('DOMContentLoaded', addField);
+>>>>>>> 827b1c1761b57430f89eb639e9d02487877e0ec8
 </script>
 {% endblock %} 
